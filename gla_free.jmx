@@ -73,7 +73,17 @@
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="HTML Assertion" enabled="true">
+            <longProp name="html_assertion_error_threshold">0</longProp>
+            <longProp name="html_assertion_warning_threshold">0</longProp>
+            <stringProp name="html_assertion_doctype">omit</stringProp>
+            <boolProp name="html_assertion_errorsonly">false</boolProp>
+            <longProp name="html_assertion_format">0</longProp>
+            <stringProp name="html_assertion_filename"></stringProp>
+          </HTMLAssertion>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_free_service" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -95,7 +105,17 @@
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="HTML Assertion" enabled="true">
+            <longProp name="html_assertion_error_threshold">0</longProp>
+            <longProp name="html_assertion_warning_threshold">0</longProp>
+            <stringProp name="html_assertion_doctype">omit</stringProp>
+            <boolProp name="html_assertion_errorsonly">false</boolProp>
+            <longProp name="html_assertion_format">0</longProp>
+            <stringProp name="html_assertion_filename"></stringProp>
+          </HTMLAssertion>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="submit_customer_details" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -174,7 +194,17 @@
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="HTML Assertion" enabled="true">
+            <longProp name="html_assertion_error_threshold">0</longProp>
+            <longProp name="html_assertion_warning_threshold">0</longProp>
+            <stringProp name="html_assertion_doctype">omit</stringProp>
+            <boolProp name="html_assertion_errorsonly">false</boolProp>
+            <longProp name="html_assertion_format">0</longProp>
+            <stringProp name="html_assertion_filename"></stringProp>
+          </HTMLAssertion>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="external_url_java" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -206,6 +236,15 @@
             <stringProp name="Assertion.scope">all</stringProp>
             <stringProp name="Scope.variable"></stringProp>
           </ResponseAssertion>
+          <hashTree/>
+          <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="HTML Assertion" enabled="true">
+            <longProp name="html_assertion_error_threshold">0</longProp>
+            <longProp name="html_assertion_warning_threshold">0</longProp>
+            <stringProp name="html_assertion_doctype">omit</stringProp>
+            <boolProp name="html_assertion_errorsonly">false</boolProp>
+            <longProp name="html_assertion_format">0</longProp>
+            <stringProp name="html_assertion_filename"></stringProp>
+          </HTMLAssertion>
           <hashTree/>
         </hashTree>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
