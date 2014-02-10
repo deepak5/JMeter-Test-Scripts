@@ -1,4 +1,7 @@
-all: simple/card.json simple/paypal.json simple/redirect_when_not_logged_in.json
+all: simple/free.json simple/card.json simple/paypal.json simple/redirect_when_not_logged_in.json
+
+simple/free.json: HAR/free.json
+	./transform.js HAR/free.json > simple/free.json
 
 simple/card.json: HAR/card.json
 	./transform.js HAR/card.json > simple/card.json
