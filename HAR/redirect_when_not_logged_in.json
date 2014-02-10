@@ -1,0 +1,919 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2014-02-07T11:25:09.807Z",
+        "id": "page_1",
+        "title": "http://www.bbc.co.uk/",
+        "pageTimings": {
+          "onContentLoad": 4632.889986038208,
+          "onLoad": 5226.7560958862305
+        }
+      }
+    ],
+    "entries": [
+      {
+        "startedDateTime": "2014-02-07T11:25:09.807Z",
+        "time": 3.866910934448242,
+        "request": {
+          "method": "GET",
+          "url": "http://www.bbc.co.uk/",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip,deflate,sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.bbc.co.uk"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 335,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "Hotspot login required",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Location",
+              "value": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=A4%3A4E%3A31%3A91%3A2B%3AE8&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F"
+            },
+            {
+              "name": "Date",
+              "value": "Fri, 07 Feb 2014 11:19:15 GMT"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Content-Length",
+              "value": "135"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/html",
+            "compression": -135
+          },
+          "redirectURL": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=A4%3A4E%3A31%3A91%3A2B%3AE8&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F",
+          "headersSize": 383,
+          "bodySize": 135
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.3589999996620463,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.05200000032345997,
+          "wait": 2.396999999291438,
+          "receive": 1.0589109351712978,
+          "ssl": -1
+        },
+        "connection": "666",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:09.812Z",
+        "time": 4528.228044509888,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=A4%3A4E%3A31%3A91%3A2B%3AE8&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip,deflate,sdch"
+            },
+            {
+              "name": "Cookie",
+              "value": "_ga=GA1.3.1361143851.1391523480; SESSID=18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6"
+            },
+            {
+              "name": "Host",
+              "value": "staging.wifiservice.net"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "aa[ac_url]",
+              "value": "https%3A%2F%2Fglair01.wifiservice.net%2Flogin"
+            },
+            {
+              "name": "aa[mac]",
+              "value": "A4%3A4E%3A31%3A91%3A2B%3AE8"
+            },
+            {
+              "name": "aa[nasid]",
+              "value": "GLAAIR01"
+            },
+            {
+              "name": "aa[ssid]",
+              "value": "Glasgow+Airport"
+            },
+            {
+              "name": "aa[orig_url]",
+              "value": "http%3A%2F%2Fwww.bbc.co.uk%2F"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "_ga",
+              "value": "GA1.3.1361143851.1391523480",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "SESSID",
+              "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 703,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Date",
+              "value": "Fri, 07 Feb 2014 11:25:14 GMT"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Server",
+              "value": "nginx"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Content-Language",
+              "value": "en"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html; charset=UTF-8"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "SESSID=18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6; expires=Fri, 07-Feb-2014 11:55:09 GMT; path=/; domain=staging.wifiservice.net; secure; httponly"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=300"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 19 Nov 1981 08:52:00 GMT"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "SESSID",
+              "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+              "path": "/",
+              "domain": "staging.wifiservice.net",
+              "expires": "2014-02-07T11:55:09.000Z",
+              "httpOnly": true,
+              "secure": true
+            }
+          ],
+          "content": {
+            "size": 4058,
+            "mimeType": "text/html",
+            "compression": 2468
+          },
+          "redirectURL": "",
+          "headersSize": 640,
+          "bodySize": 1590
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.23499999952036887,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.15499999972234946,
+          "wait": 4508.810000000267,
+          "receive": 19.028044510378095,
+          "ssl": -1
+        },
+        "connection": "455",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.357Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/static/air-gla/css/frontend.css",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 22028,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.357Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/static/ay/js/jquery-1.10.1.min.js",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 93021,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.357Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/static/ay/js/ui.js",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 6255,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.357Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/static/air-gla/js/frontend.js",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 19,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.357Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/static/mama/js/ad.js",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 973,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.357Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/static/mama/js/mama.js",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 173,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.357Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/static/air-gla/images/primary-logo.png",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 12445,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.395Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://www.google-analytics.com/analytics.js",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 22709,
+            "mimeType": "text/javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.400Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/static/air-gla/images/icon-primary-menu.png",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 332,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.400Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/static/air-gla/images/bg-body.png",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 20779,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.400Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "https://staging.wifiservice.net/static/air-gla/images/icon-product.png",
+          "headers": [],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [],
+          "cookies": [],
+          "content": {
+            "size": 590,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": 17,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2014-02-07T11:25:14.995Z",
+        "time": 38.28692436218262,
+        "request": {
+          "method": "GET",
+          "url": "https://www.google-analytics.com/collect?v=1&_v=j16&a=734406757&t=pageview&_s=1&dl=https%3A%2F%2Fstaging.wifiservice.net%2F&ul=en-gb&de=UTF-8&dt=Glasgow%20Airport&sd=24-bit&sr=1920x1080&vp=1840x382&je=1&fl=12.0%20r0&_u=MAC~&cid=1361143851.1391523480&tid=UA-40404672-3&cd1=air-gla&cd2=real%20user&z=2007594292",
+          "headers": [
+            {
+              "name": ":host",
+              "value": "www.google-analytics.com"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip,deflate,sdch"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36"
+            },
+            {
+              "name": ":path",
+              "value": "/collect?v=1&_v=j16&a=734406757&t=pageview&_s=1&dl=https%3A%2F%2Fstaging.wifiservice.net%2F&ul=en-gb&de=UTF-8&dt=Glasgow%20Airport&sd=24-bit&sr=1920x1080&vp=1840x382&je=1&fl=12.0%20r0&_u=MAC~&cid=1361143851.1391523480&tid=UA-40404672-3&cd1=air-gla&cd2=real%20user&z=2007594292"
+            },
+            {
+              "name": "accept",
+              "value": "image/webp,*/*;q=0.8"
+            },
+            {
+              "name": ":version",
+              "value": "HTTP/1.1"
+            },
+            {
+              "name": "referer",
+              "value": "https://staging.wifiservice.net/"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "v",
+              "value": "1"
+            },
+            {
+              "name": "_v",
+              "value": "j16"
+            },
+            {
+              "name": "a",
+              "value": "734406757"
+            },
+            {
+              "name": "t",
+              "value": "pageview"
+            },
+            {
+              "name": "_s",
+              "value": "1"
+            },
+            {
+              "name": "dl",
+              "value": "https%3A%2F%2Fstaging.wifiservice.net%2F"
+            },
+            {
+              "name": "ul",
+              "value": "en-gb"
+            },
+            {
+              "name": "de",
+              "value": "UTF-8"
+            },
+            {
+              "name": "dt",
+              "value": "Glasgow%20Airport"
+            },
+            {
+              "name": "sd",
+              "value": "24-bit"
+            },
+            {
+              "name": "sr",
+              "value": "1920x1080"
+            },
+            {
+              "name": "vp",
+              "value": "1840x382"
+            },
+            {
+              "name": "je",
+              "value": "1"
+            },
+            {
+              "name": "fl",
+              "value": "12.0%20r0"
+            },
+            {
+              "name": "_u",
+              "value": "MAC~"
+            },
+            {
+              "name": "cid",
+              "value": "1361143851.1391523480"
+            },
+            {
+              "name": "tid",
+              "value": "UA-40404672-3"
+            },
+            {
+              "name": "cd1",
+              "value": "air-gla"
+            },
+            {
+              "name": "cd2",
+              "value": "real%20user"
+            },
+            {
+              "name": "z",
+              "value": "2007594292"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "last-modified",
+              "value": "Sun, 17 May 1998 03:00:00 GMT"
+            },
+            {
+              "name": "alternate-protocol",
+              "value": "443:quic"
+            },
+            {
+              "name": "age",
+              "value": "131990"
+            },
+            {
+              "name": "date",
+              "value": "Wed, 05 Feb 2014 22:45:25 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "image/gif"
+            },
+            {
+              "name": "status",
+              "value": "200 OK"
+            },
+            {
+              "name": "expires",
+              "value": "Mon, 07 Aug 1995 23:30:00 GMT"
+            },
+            {
+              "name": "cache-control",
+              "value": "private, no-cache, no-cache=Set-Cookie, proxy-revalidate"
+            },
+            {
+              "name": "content-length",
+              "value": "35"
+            },
+            {
+              "name": "server",
+              "value": "Golfe2"
+            },
+            {
+              "name": "version",
+              "value": "HTTP/1.1"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 35,
+            "mimeType": "image/gif",
+            "compression": 472
+          },
+          "redirectURL": "",
+          "headersSize": 437,
+          "bodySize": -437
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.37400000019260915,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.27099999988422496,
+          "wait": 37.008000000241736,
+          "receive": 0.6339243618640467,
+          "ssl": -1
+        },
+        "connection": "474",
+        "pageref": "page_1"
+      }
+    ]
+  }
+}

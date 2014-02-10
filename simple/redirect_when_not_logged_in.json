@@ -1,0 +1,112 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "url": "http://www.bbc.co.uk/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "www.bbc.co.uk"
+        }
+      ],
+      "queryString": [],
+      "cookies": []
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Hotspot login required",
+      "headers": [
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=A4%3A4E%3A31%3A91%3A2B%3AE8&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F"
+        },
+        {
+          "name": "Content-Type",
+          "value": "text/html"
+        }
+      ],
+      "cookies": [],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": -135
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=A4%3A4E%3A31%3A91%3A2B%3AE8&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "aa[ac_url]",
+          "value": "https%3A%2F%2Fglair01.wifiservice.net%2Flogin"
+        },
+        {
+          "name": "aa[mac]",
+          "value": "A4%3A4E%3A31%3A91%3A2B%3AE8"
+        },
+        {
+          "name": "aa[nasid]",
+          "value": "GLAAIR01"
+        },
+        {
+          "name": "aa[ssid]",
+          "value": "Glasgow+Airport"
+        },
+        {
+          "name": "aa[orig_url]",
+          "value": "http%3A%2F%2Fwww.bbc.co.uk%2F"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "_ga",
+          "value": "GA1.3.1361143851.1391523480",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-07T11:55:09.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 4058,
+        "mimeType": "text/html",
+        "compression": 2468
+      }
+    }
+  }
+]

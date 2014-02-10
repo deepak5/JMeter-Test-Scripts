@@ -1,0 +1,1356 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "url": "http://www.bbc.co.uk/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "www.bbc.co.uk"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "BBC-UID",
+          "value": "b5c2ef94bc4889870debad7ab1760745576d07e2f414210e1a51a4a42d05bb500Mozilla/5.0%20(X11%3b%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML%2c%20like%20Gecko)%20Chrome/32.0.1700.107%20Safari/537.36",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "ckpf_ww_mobile_js",
+          "value": "on",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "ckns_policy",
+          "value": "111",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "s1",
+          "value": "52F4C8992F8502CD",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "ckpf_mandolin",
+          "value": "%22footer-promo%22%3A%7B%22segment%22%3A%22b%22%2C%22end%22%3A%221392378650281%22%7D",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Hotspot login required",
+      "headers": [
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=A4%3A4E%3A31%3A91%3A2B%3AE8&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F"
+        },
+        {
+          "name": "Content-Type",
+          "value": "text/html"
+        }
+      ],
+      "cookies": [],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": -135
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=A4%3A4E%3A31%3A91%3A2B%3AE8&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "aa[ac_url]",
+          "value": "https%3A%2F%2Fglair01.wifiservice.net%2Flogin"
+        },
+        {
+          "name": "aa[mac]",
+          "value": "A4%3A4E%3A31%3A91%3A2B%3AE8"
+        },
+        {
+          "name": "aa[nasid]",
+          "value": "GLAAIR01"
+        },
+        {
+          "name": "aa[ssid]",
+          "value": "Glasgow+Airport"
+        },
+        {
+          "name": "aa[orig_url]",
+          "value": "http%3A%2F%2Fwww.bbc.co.uk%2F"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID-backend",
+          "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "_ga",
+          "value": "GA1.3.1361143851.1391523480",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-07T12:33:41.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 4058,
+        "mimeType": "text/html",
+        "compression": 2468
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/product/billing?aa[product][id]=19",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "aa[product][id]",
+          "value": "19"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID-backend",
+          "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "_ga",
+          "value": "GA1.3.1361143851.1391523480",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-07T12:33:49.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 20116,
+        "mimeType": "text/html",
+        "compression": 14430
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "url": "https://staging.wifiservice.net/product/billing?aa[product][id]=19",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "aa[product][id]",
+          "value": "19"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID-backend",
+          "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "_ga",
+          "value": "GA1.3.1361143851.1391523480",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/product/payment"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-07T12:34:19.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/product/payment",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID-backend",
+          "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "_ga",
+          "value": "GA1.3.1361143851.1391523480",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-07T12:34:19.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 6557,
+        "mimeType": "text/html",
+        "compression": 4150
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/product/payment?mama[method]=paypal",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "mama[method]",
+          "value": "paypal"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID-backend",
+          "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "_ga",
+          "value": "GA1.3.1361143851.1391523480",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://www.paypal.com/cgi-bin/webscr?token=EC-3WW786963E133570E&useraction=commit&cmd=_express-checkout"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-07T12:34:29.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://www.paypal.com/cgi-bin/webscr?token=EC-3WW786963E133570E&useraction=commit&cmd=_express-checkout",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "www.paypal.com"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "token",
+          "value": "EC-3WW786963E133570E"
+        },
+        {
+          "name": "useraction",
+          "value": "commit"
+        },
+        {
+          "name": "cmd",
+          "value": "_express-checkout"
+        }
+      ],
+      "cookies": []
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "cwrClyrK4LoCV1fydGbAxiNL6iG",
+          "value": "TcN5NTui9U8pT30agAK5WsaeqIyJ_tJqcBsVx55DG4Jmj_Nuu0nltTYjD1Cv8d9Vd_6ARiGUVXv08-eFTeWmzg4yhcqaU_ghMigdR1Du3PJonoIMKsmzLCrq63pRHEXUb9kh57mHmbYxinNzjrG09SDRwTatS1P48FcXFBfyGWejT8CBI_cyKYa5Ua4bYViEEu5W8AoSHQ3JEPH9fGTmqTlJJlCcPAQuN1DL6Tayd3UfNPqxZpatSuADI4e",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "KHcl0EuY7AKSMgfvHl7J5E7hPtK",
+          "value": "WrcHUzkjnlt9RbZDmR3Bu68WG2Zp-fG7KZShFSUerkQwJ9uzk74q-1Qoj8SNs0boL4TmbWghvCsHQyRy",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": "2034-02-02T12:07:30.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "cookie_check",
+          "value": "yes",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": "2024-02-05T12:07:30.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "navcmd",
+          "value": "_express-checkout",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "abc_switch_cross_paypal",
+          "value": "R1100%26ECG%3da%40500%7c1391861249%7ce%3bv%3bw%3b6%26",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": "2014-05-18T12:07:30.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "pNTcMTtQfrJuaJiwEnWXQ6yNxfq",
+          "value": "7SUzTCKqYrFXedensOQiomHojs96llG9F6iqi-5rz6z44RgYmwZzaj8AnIOJi5aL-QswKpNLELMbD3mb9uwBIi3wodmtPJ18Zx-c2yx6gdRvSEl07sG3oJ2-yyJVYmm2lhBH9ryPIlVz4NU89YCoeUjuQtGJRWhbu3F757Q9nygEtehFU7Z-mDRTDWW7BPfnMTolpoac8wgjrJV1JshwyDx33zumVfLjGV0RmZjX9km7poPwjgVJTNLNtYz-9qT2Vx16z3D9cDF87QLNiXWmTqRjJBoZV_BmwKZ1lO38ICx4ltR4yZeoiEg7qjkpNv24GanDJvV8N1od1PehG9kMYolHuxKnPV7Ve66-tQERxa6b8YzH",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "feel_cookie",
+          "value": "a%2017%20_express-checkout%20b%200%20%20c%2018%20merchantpaymentweb%20d%200%20%20e%2021%20Checkout%2fec%2fLogin.xsl%20f%200%20%20g%205%20en_GB%20h%200%20%20i%2021%20xpt%2fCheckout%2fec%2fLogin%20j%200%20%20k%2036%20Pay%20with%20a%20PayPal%20account%20%e2%80%93%20PayPal%20l%200%20%20",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": "1969-12-31T23:59:59.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "Apache",
+          "value": "10.74.8.134.1391774849052237",
+          "path": "/",
+          "expires": "2044-01-31T12:07:29.000Z",
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "X-PP-SILOVER",
+          "value": "name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dappdisp%26TIME%3D2177692754",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "X-PP-SILOVER",
+          "value": "",
+          "expires": "1970-01-01T00:00:01.000Z",
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "Apache",
+          "value": "10.74.8.47.1391774849033222",
+          "path": "/",
+          "expires": "2044-01-31T12:07:29.000Z",
+          "httpOnly": false,
+          "secure": false
+        }
+      ],
+      "content": {
+        "size": 20862,
+        "mimeType": "text/html",
+        "compression": 14503
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "url": "https://www.paypal.com/uk/cgi-bin/merchantpaymentweb?dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b0819827f0298a8d8382cff5df9729c4c3c2b2",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "www.paypal.com"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "dispatch",
+          "value": "50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b0819827f0298a8d8382cff5df9729c4c3c2b2"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "cwrClyrK4LoCV1fydGbAxiNL6iG",
+          "value": "TcN5NTui9U8pT30agAK5WsaeqIyJ_tJqcBsVx55DG4Jmj_Nuu0nltTYjD1Cv8d9Vd_6ARiGUVXv08-eFTeWmzg4yhcqaU_ghMigdR1Du3PJonoIMKsmzLCrq63pRHEXUb9kh57mHmbYxinNzjrG09SDRwTatS1P48FcXFBfyGWejT8CBI_cyKYa5Ua4bYViEEu5W8AoSHQ3JEPH9fGTmqTlJJlCcPAQuN1DL6Tayd3UfNPqxZpatSuADI4e",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "KHcl0EuY7AKSMgfvHl7J5E7hPtK",
+          "value": "WrcHUzkjnlt9RbZDmR3Bu68WG2Zp-fG7KZShFSUerkQwJ9uzk74q-1Qoj8SNs0boL4TmbWghvCsHQyRy",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "cookie_check",
+          "value": "yes",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "navcmd",
+          "value": "_express-checkout",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "abc_switch_cross_paypal",
+          "value": "R1100%26ECG%3da%40500%7c1391861249%7ce%3bv%3bw%3b6%26",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "pNTcMTtQfrJuaJiwEnWXQ6yNxfq",
+          "value": "7SUzTCKqYrFXedensOQiomHojs96llG9F6iqi-5rz6z44RgYmwZzaj8AnIOJi5aL-QswKpNLELMbD3mb9uwBIi3wodmtPJ18Zx-c2yx6gdRvSEl07sG3oJ2-yyJVYmm2lhBH9ryPIlVz4NU89YCoeUjuQtGJRWhbu3F757Q9nygEtehFU7Z-mDRTDWW7BPfnMTolpoac8wgjrJV1JshwyDx33zumVfLjGV0RmZjX9km7poPwjgVJTNLNtYz-9qT2Vx16z3D9cDF87QLNiXWmTqRjJBoZV_BmwKZ1lO38ICx4ltR4yZeoiEg7qjkpNv24GanDJvV8N1od1PehG9kMYolHuxKnPV7Ve66-tQERxa6b8YzH",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "X-PP-SILOVER",
+          "value": "name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dappdisp%26TIME%3D2177692754",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "Apache",
+          "value": "10.74.8.47.1391774849033222",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "ts",
+          "value": "vreXpYrS%3D1486445629%26vteXpYrS%3D1391776652%26vr%3D0c3ee42f1440a4918466e1b6ff581e33%26vt%3D0c3ee42f1440a4918466e1b6ff581e32",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "s_pers",
+          "value": "%20tr_p1%3Dmain%253Aec%253A%253A%253Astart%7C1391776651450%3B%20s_fid%3D1ACD4347D4A4867F-339959F511C775CD%7C1454847017698%3B%20gpv_c43%3Dmain%253Aec%253A%253A%253Astart%7C1391776817715%3B%20gpv_events%3Dno%2520value%7C1391776817737%3B",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "s_sess",
+          "value": "%20s_cc%3Dtrue%3B%20s_ppv%3D69%3B%20v31%3Dmain%253Aec%253A%253A%253Astart%3B%20c_m%3DOther%2520Natural%2520Referrersundefinedstaging.wifiservice.net%3B%20lt%3Dlogin.x%255Emain%253Aec%253A%253A%253Astart%3B%20s_sq%3Dpaypalglobal%253D%252526pid%25253Dmain%2525253Aec%2525253A%2525253A%2525253Astart%252526pidt%25253D1%252526oid%25253DLog%25252520In%252526oidt%25253D3%252526ot%25253DSUBMIT%3B",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "tcs",
+          "value": "main%3Aec%3A%3A%3Astart%7Clogin.x",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "abc_switch_cross_paypal",
+          "value": "R1100%26ECG%3da%40500%7c1391861249%7ce%3bv%3bw%3b6%26",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": "2014-05-18T12:10:22.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "login_email",
+          "value": "technicalsolutions%40arqiva.com",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": "2014-08-06T12:10:22.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "flow_back_cookie",
+          "value": "",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "cwrClyrK4LoCV1fydGbAxiNL6iG",
+          "value": "lWg0e1j4ByB63W1Xi5CG-7ke7hgVr29v5DV2DNFKdL4Djbp5TypaibHP3TDwYmNdWcKZpWPrfIun8CyIK2d0QA3tdaVfdIt1uZYLkKDIQ2iDZEydSeR3lNMqmjvLIwVbiKO_oubVfpSjBpFgVkJa_9YuLmqZaAT-Cty7y08wM-OCMImBARnOAYtarLgV9K7Y9d_iUxZbgNxSuxkpW3HExOhHJlNn90aHAD4whhp96CGduAeK6V1G0p6KDKmLNjQiaovOpMQcG1WP3YJc7eTuEPNlHWu0to_OE3vesZCiE9EQu_Ss8gX0UJPNQa0r7kTwgmfY8vPh0XW4Ji38NLQ3fduuhu2sxK09LR9G7rPpI3rsODc0NeQKzM2iyskSCuKBnnRAN8cuuwgpUdoKX-cXt4OLjRvD9LbQfOm25W",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "HaC80bwXscjqZ7KM6VOxULOB534",
+          "value": "eu78tEuijefuLKjyd0bhVrtiSuqfpeSbA-z6xCHwESOJlZi6jVyAUvaIook9A3X_zVwe5kUkJY9TGpdAhw1mHV3woS03BVcIpEK7vCEKTmWMgKMzQ1ozJMR_CZE4iMRF9A0eDW",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "SEGM",
+          "value": "",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "LANG",
+          "value": "en_GB%3bGB",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "INSIDE_SEARCH_PARAMS",
+          "value": "1%3bGB%3ben_GB%3bEurope%2fLondon",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": "2024-02-05T12:10:22.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "pNTcMTtQfrJuaJiwEnWXQ6yNxfq",
+          "value": "I3-tsNjKIzRExvqEf7sF4BU9fDYuqpFbo3L0scqiY6tgoZeavTD43qMSlry9AI7c-zlTA6nrkU512Xlms4iUzHxCiEjcgiVOHMgTiZeuusRBr1p6bA-VonyAvR6OqQf07_wVDdLO_ZZkgQcKOBF89g-RzWu1njOxZ6B2EleFK3O8snpDPGyJmYXH3aSqgsi1a0ydeIU7EsL4FCPuE-FUcyEbbBQdqWzTycUuosTIuFMq_psh27TPDTQCEFJO_ay4b3-FvguT6lonMdnxFlxoPtgUhKnsH5ZTb6iUcftdTZ2HD8YrefRy3XCeRQF-alGUreeVzxz_A1JRBxXzvmjUbaU3FRNJjCk68HhSs0",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "feel_cookie",
+          "value": "a%205%20_flow%20b%200%20%20c%2018%20merchantpaymentweb%20d%200%20%20e%2031%20Checkout%2fec%2fReview.MiniPage.xsl%20f%200%20%20g%205%20en_GB%20h%200%20%20i%2031%20xpt%2fCheckout%2fec%2fReview.MiniPage%20j%200%20%20k%2023%20Page%20Not%20Found%20-%20PayPal%20l%200%20%20",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": "1969-12-31T23:59:59.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "X-PP-SILOVER",
+          "value": "name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D718140498",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "X-PP-SILOVER",
+          "value": "",
+          "expires": "1970-01-01T00:00:01.000Z",
+          "httpOnly": false,
+          "secure": false
+        }
+      ],
+      "content": {
+        "size": 12611,
+        "mimeType": "text/html",
+        "compression": 7882
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "url": "https://www.paypal.com/uk/cgi-bin/merchantpaymentweb?dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b0819827f0298a8d8382cff5df9729c4c3c2b2",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "www.paypal.com"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "dispatch",
+          "value": "50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b0819827f0298a8d8382cff5df9729c4c3c2b2"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "KHcl0EuY7AKSMgfvHl7J5E7hPtK",
+          "value": "WrcHUzkjnlt9RbZDmR3Bu68WG2Zp-fG7KZShFSUerkQwJ9uzk74q-1Qoj8SNs0boL4TmbWghvCsHQyRy",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "cookie_check",
+          "value": "yes",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "navcmd",
+          "value": "_express-checkout",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "Apache",
+          "value": "10.74.8.47.1391774849033222",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "abc_switch_cross_paypal",
+          "value": "R1100%26ECG%3da%40500%7c1391861249%7ce%3bv%3bw%3b6%26",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "login_email",
+          "value": "technicalsolutions%40arqiva.com",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "flow_back_cookie",
+          "value": "",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "cwrClyrK4LoCV1fydGbAxiNL6iG",
+          "value": "lWg0e1j4ByB63W1Xi5CG-7ke7hgVr29v5DV2DNFKdL4Djbp5TypaibHP3TDwYmNdWcKZpWPrfIun8CyIK2d0QA3tdaVfdIt1uZYLkKDIQ2iDZEydSeR3lNMqmjvLIwVbiKO_oubVfpSjBpFgVkJa_9YuLmqZaAT-Cty7y08wM-OCMImBARnOAYtarLgV9K7Y9d_iUxZbgNxSuxkpW3HExOhHJlNn90aHAD4whhp96CGduAeK6V1G0p6KDKmLNjQiaovOpMQcG1WP3YJc7eTuEPNlHWu0to_OE3vesZCiE9EQu_Ss8gX0UJPNQa0r7kTwgmfY8vPh0XW4Ji38NLQ3fduuhu2sxK09LR9G7rPpI3rsODc0NeQKzM2iyskSCuKBnnRAN8cuuwgpUdoKX-cXt4OLjRvD9LbQfOm25W",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "HaC80bwXscjqZ7KM6VOxULOB534",
+          "value": "eu78tEuijefuLKjyd0bhVrtiSuqfpeSbA-z6xCHwESOJlZi6jVyAUvaIook9A3X_zVwe5kUkJY9TGpdAhw1mHV3woS03BVcIpEK7vCEKTmWMgKMzQ1ozJMR_CZE4iMRF9A0eDW",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "SEGM",
+          "value": "",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "LANG",
+          "value": "en_GB%3bGB",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "INSIDE_SEARCH_PARAMS",
+          "value": "1%3bGB%3ben_GB%3bEurope%2fLondon",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "pNTcMTtQfrJuaJiwEnWXQ6yNxfq",
+          "value": "I3-tsNjKIzRExvqEf7sF4BU9fDYuqpFbo3L0scqiY6tgoZeavTD43qMSlry9AI7c-zlTA6nrkU512Xlms4iUzHxCiEjcgiVOHMgTiZeuusRBr1p6bA-VonyAvR6OqQf07_wVDdLO_ZZkgQcKOBF89g-RzWu1njOxZ6B2EleFK3O8snpDPGyJmYXH3aSqgsi1a0ydeIU7EsL4FCPuE-FUcyEbbBQdqWzTycUuosTIuFMq_psh27TPDTQCEFJO_ay4b3-FvguT6lonMdnxFlxoPtgUhKnsH5ZTb6iUcftdTZ2HD8YrefRy3XCeRQF-alGUreeVzxz_A1JRBxXzvmjUbaU3FRNJjCk68HhSs0",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "X-PP-SILOVER",
+          "value": "name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D718140498",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "ts",
+          "value": "vreXpYrS%3D1486445800%26vteXpYrS%3D1391776823%26vr%3D0c3ee42f1440a4918466e1b6ff581e33%26vt%3D0c3ee42f1440a4918466e1b6ff581e32",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "s_pers",
+          "value": "%20tr_p1%3Dmain%253Aec%253A%253A%253Astart%7C1391776651450%3B%20s_fid%3D1ACD4347D4A4867F-339959F511C775CD%7C1454847031994%3B%20gpv_c43%3Dmain%253Aec%253A%253A%253Areview%7C1391776832011%3B%20gpv_events%3Dno%2520value%7C1391776832032%3B",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "s_sess",
+          "value": "%20s_cc%3Dtrue%3B%20s_ppv%3D100%3B%20v31%3Dmain%253Aec%253A%253A%253Areview%3B%20c_m%3DOther%2520Natural%2520Referrersundefinedstaging.wifiservice.net%3B%20lt%3Dcontinue%255Emain%253Aec%253A%253A%253Areview%3B%20s_sq%3Dpaypalglobal%253D%252526pid%25253Dmain%2525253Aec%2525253A%2525253A%2525253Areview%252526pidt%25253D1%252526oid%25253DPay%25252520Now%252526oidt%25253D3%252526ot%25253DSUBMIT%3B",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "tcs",
+          "value": "main%3Aec%3A%3A%3Areview%7Ccontinue",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "HaC80bwXscjqZ7KM6VOxULOB534",
+          "value": "00xWRW4MGOHZQeHPldjZFdk3s4XVctcrb2lXB1t6jMamfD9rn5HRkP5MbVABIwcYXm5SOeF5Hp34qsS5q1DvGPpYnioIYr7uWSVcxL4NqkOnVQ2xYFSlIxtydPd01cgcu2_3nW",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "LANG",
+          "value": "en_GB%3bGB",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "INSIDE_SEARCH_PARAMS",
+          "value": "1%3bGB%3ben_GB%3bEurope%2fLondon",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": "2024-02-05T12:10:33.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "pNTcMTtQfrJuaJiwEnWXQ6yNxfq",
+          "value": "3hlDbIm4MnONcUWykV-fBd6YCCJ50TZdqGBVrld96Uh5ISJXekQGMTPSEqLobdd8m0tepPIcrhbWzk6j95lUnrt8ew2gfZu_rn2djUbKP5R2QnBqpcYXVPEbkSuKzu1NBQ5x56mze7Km-FoxSRy9cXM9ejly9pDMcbLNXA-LxqVFOjMNajBxPfzm9ww-JVBWwMMy47BQNLhYUt7s9Tw2jknp4beG8cKdeVkCPo2NmUzufkhQX4PhuZ1Ox6EPv5p1tNn3Xndtb3uF2UZbzUTRf9JkSlRDh96s5w9abPsuCdurJTA7wYPiMBiZFCzl-fVNyReZArwmw0ZNFm6CnlDbQlXG0wWRaqBZkh7PT0",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "X-PP-SILOVER",
+          "value": "name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D953021522",
+          "path": "/",
+          "domain": ".paypal.com",
+          "expires": null,
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "X-PP-SILOVER",
+          "value": "",
+          "expires": "1970-01-01T00:00:01.000Z",
+          "httpOnly": false,
+          "secure": false
+        }
+      ],
+      "content": {
+        "size": 298,
+        "mimeType": "text/html",
+        "compression": -36
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/product/payment?mama%5Bmethod%5D=paypal&mama%5Bpaypal%5D=return&sitereference=spectrumthree46081&transactionreference=1-32-53554&token=EC-3WW786963E133570E&PayerID=KSK3SLYWADBUJ",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "mama%5Bmethod%5D",
+          "value": "paypal"
+        },
+        {
+          "name": "mama%5Bpaypal%5D",
+          "value": "return"
+        },
+        {
+          "name": "sitereference",
+          "value": "spectrumthree46081"
+        },
+        {
+          "name": "transactionreference",
+          "value": "1-32-53554"
+        },
+        {
+          "name": "token",
+          "value": "EC-3WW786963E133570E"
+        },
+        {
+          "name": "PayerID",
+          "value": "KSK3SLYWADBUJ"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID-backend",
+          "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "_ga",
+          "value": "GA1.3.1361143851.1391523480",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-07T12:37:36.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID-backend",
+          "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "_ga",
+          "value": "GA1.3.1361143851.1391523480",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://glair01.wifiservice.net/login?username=fMR7LgA7r8&password=utlXwTSrwR&dst=https%3A%2F%2Fstaging.wifiservice.net%2F&popup=false"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-07T12:37:42.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://glair01.wifiservice.net/login?username=fMR7LgA7r8&password=utlXwTSrwR&dst=https%3A%2F%2Fstaging.wifiservice.net%2F&popup=false",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "glair01.wifiservice.net"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "username",
+          "value": "fMR7LgA7r8"
+        },
+        {
+          "name": "password",
+          "value": "utlXwTSrwR"
+        },
+        {
+          "name": "dst",
+          "value": "https%3A%2F%2Fstaging.wifiservice.net%2F"
+        },
+        {
+          "name": "popup",
+          "value": "false"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "loginID",
+          "value": "78226280",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "loginID",
+          "value": "3084067039",
+          "path": "/login",
+          "expires": "2014-02-10T12:04:45.000Z",
+          "httpOnly": false,
+          "secure": false
+        }
+      ],
+      "content": {
+        "size": 487,
+        "mimeType": "text/html",
+        "compression": -100
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID-backend",
+          "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "_ga",
+          "value": "GA1.3.1361143851.1391523480",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-07T12:37:43.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 3946,
+        "mimeType": "text/html",
+        "compression": 2277
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "http://www.bbc.co.uk/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "www.bbc.co.uk"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "BBC-UID",
+          "value": "b5c2ef94bc4889870debad7ab1760745576d07e2f414210e1a51a4a42d05bb500Mozilla/5.0%20(X11%3b%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML%2c%20like%20Gecko)%20Chrome/32.0.1700.107%20Safari/537.36",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "ckns_policy",
+          "value": "111",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "s1",
+          "value": "52F4C8992F8502CD",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "ckpf_mandolin",
+          "value": "%22footer-promo%22%3A%7B%22segment%22%3A%22b%22%2C%22end%22%3A%221392378650281%22%7D",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "ckpf_ww_mobile_js",
+          "value": "on",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [],
+      "content": {
+        "size": 125826,
+        "mimeType": "text/html",
+        "compression": -253
+      }
+    }
+  }
+]
