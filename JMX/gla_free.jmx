@@ -60,16 +60,16 @@ vars.put(&quot;captive_portal_domain&quot;, &quot;staging.wifiservice.net&quot;)
 
 // Site-specific configuration
 vars.put(&quot;site_nasid&quot;, props.get(&quot;site.nasid&quot;));
-vars.put(&quot;site_ssid&quot;, &quot;Glasgow Airport&quot;);
-vars.put(&quot;site_subdomain&quot;, &quot;glair01.wifiservice.net&quot;);
+vars.put(&quot;site_ssid&quot;, props.get(&quot;site.ssid&quot;));
+vars.put(&quot;site_subdomain&quot;, props.get(&quot;site.subdomain&quot;));
 
-vars.put(&quot;site_whitelist_example_domain&quot; , &quot;arqivawifi.com&quot;);
-vars.put(&quot;site_whitelist_example_path&quot; , &quot;/support-faqs/&quot;);
-vars.put(&quot;site_whitelist_example_expected_substring&quot; , &quot;please complete the form below&quot;);
+vars.put(&quot;site_whitelist_example_domain&quot;, props.get(&quot;site.whitelist.example.domain&quot;));
+vars.put(&quot;site_whitelist_example_path&quot;, props.get(&quot;site.whitelist.example.path&quot;));
+vars.put(&quot;site_whitelist_example_expected_substring&quot;, props.get(&quot;site.whitelist.example.expected_substring&quot;));
 
-vars.put(&quot;site_non_whitelist_example_domain&quot; , &quot;www.google.co.uk&quot;);
-vars.put(&quot;site_non_whitelist_example_path&quot; , &quot;/&quot;);
-vars.put(&quot;site_non_whitelist_example_expected_substring&quot; , &quot;I&apos;m Feeling Lucky&quot;);
+vars.put(&quot;site_non_whitelist_example_domain&quot;, props.get(&quot;site.non_whitelist.example.domain&quot;));
+vars.put(&quot;site_non_whitelist_example_path&quot;, props.get(&quot;site.non_whitelist.example.path&quot;));
+vars.put(&quot;site_non_whitelist_example_expected_substring&quot;, props.get(&quot;site.non_whitelist.example.expected_substring&quot;));
 
 // The MAC address of the machine the tests are running from. Use uppercase!
 vars.put(&quot;mac_address&quot;, props.get(&quot;mac_address&quot;));
@@ -84,7 +84,8 @@ vars.put(&quot;redirect_url&quot;,
   &quot;&amp;aa[mac]=&quot; + java.net.URLEncoder.encode(vars.get(&quot;mac_address&quot;)) +
   &quot;&amp;aa[nasid]=&quot; + java.net.URLEncoder.encode(vars.get(&quot;site_nasid&quot;)) +
   &quot;&amp;aa[ssid]=&quot; + java.net.URLEncoder.encode(vars.get(&quot;site_ssid&quot;)) +
-  &quot;&amp;aa[orig_url]=http%3A%2F%2F&quot; + java.net.URLEncoder.encode(vars.get(&quot;site_non_whitelist_example_domain&quot;)) + &quot;%2F&quot;);</stringProp>
+  &quot;&amp;aa[orig_url]=http%3A%2F%2F&quot; + java.net.URLEncoder.encode(vars.get(&quot;site_non_whitelist_example_domain&quot;)) + &quot;%2F&quot;);
+  </stringProp>
           <stringProp name="BeanShellSampler.filename"></stringProp>
           <stringProp name="BeanShellSampler.parameters"></stringProp>
           <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
