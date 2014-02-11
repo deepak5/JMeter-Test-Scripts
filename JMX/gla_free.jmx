@@ -53,7 +53,9 @@
         </ConfigTestElement>
         <hashTree/>
         <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="globals" enabled="true">
-          <stringProp name="BeanShellSampler.query">// Change for staging/live
+          <stringProp name="BeanShellSampler.query">import java.net.URLEncoder;
+
+// Change for staging/live
 vars.put(&quot;captive_portal_domain&quot;, &quot;staging.wifiservice.net&quot;);
 
 // Site-specific configuration
@@ -64,8 +66,15 @@ vars.put(&quot;site_whitelist_example_domain&quot; , &quot;www.glasgow.com&quot;
 vars.put(&quot;site_non_whitelist_example_domain&quot; , &quot;www.google.co.uk&quot;);
 
 // The MAC address of the machine the tests are running from
-vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:54&quot;);
-</stringProp>
+vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:53&quot;);
+
+vars.put(&quot;redirect_url&quot;,
+  &quot;https://&quot; + vars.get(&quot;captive_portal_domain&quot;) + &quot;/?&quot; +
+  &quot;aa[ac_url]=https%3A%2F%2F&quot; + vars.get(&quot;site_subdomain&quot;) + &quot;%2Flogin&quot; +
+  &quot;&amp;aa[mac]=&quot; + java.net.URLEncoder.encode(vars.get(&quot;mac_address&quot;)) +
+  &quot;&amp;aa[nasid]=&quot; + java.net.URLEncoder.encode(vars.get(&quot;site_nasid&quot;)) +
+  &quot;&amp;aa[ssid]=&quot; + java.net.URLEncoder.encode(vars.get(&quot;site_ssid&quot;)) +
+  &quot;&amp;aa[orig_url]=http%3A%2F%2F&quot; + java.net.URLEncoder.encode(vars.get(&quot;site_non_whitelist_example_domain&quot;)) + &quot;%2F&quot;);</stringProp>
           <stringProp name="BeanShellSampler.filename"></stringProp>
           <stringProp name="BeanShellSampler.parameters"></stringProp>
           <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
@@ -117,17 +126,16 @@ vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:54&quot;);
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
+            <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_location" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-1114295747">Location: https://staging.wifiservice.net/</stringProp>
+              <stringProp name="98667743">Location: ${redirect_url}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
-            <stringProp name="TestPlan.comments">The location actually ends with something like: ?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&amp;aa[mac]=0A%3A1B%3A2C%3A3D%3A4E%3A5F&amp;aa[nasid]=GLAAIR01&amp;aa[ssid]=Glasgow+Airport&amp;aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F</stringProp>
+            <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
           <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="response_body_is_html" enabled="true">
@@ -223,7 +231,7 @@ vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:54&quot;);
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
+            <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_has_cookie_SESSID" enabled="true">
@@ -292,7 +300,7 @@ vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:54&quot;);
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
+            <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_has_cookie_SESSID" enabled="true">
@@ -417,7 +425,7 @@ vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:54&quot;);
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
+            <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_location" enabled="true">
@@ -426,7 +434,7 @@ vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:54&quot;);
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
+            <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
@@ -576,7 +584,7 @@ vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:54&quot;);
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
+            <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_has_cookie_loginID" enabled="true">
@@ -635,7 +643,7 @@ vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:54&quot;);
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
+            <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
           <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="response_body_is_html" enabled="true">
