@@ -52,11 +52,23 @@
           <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
         </ConfigTestElement>
         <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="globals" enabled="true">
+          <stringProp name="BeanShellSampler.query">vars.put(&quot;non_whitelist_domain&quot;, &quot;www.google.co.uk&quot;);
+vars.put(&quot;captive_portal_domain&quot;, &quot;staging.wifiservice.net&quot;);
+
+vars.put(&quot;site_nasid&quot;, &quot;GLAAIR01&quot;);
+vars.put(&quot;site_ssid&quot;, &quot;Glasgow Airport&quot;);
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_non_whitelist_url_redirects_to_captive_portal" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">www.bbc.co.uk</stringProp>
+          <stringProp name="HTTPSampler.domain">${non_whitelist_domain}</stringProp>
           <stringProp name="HTTPSampler.port">80</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -133,21 +145,21 @@
               </elementProp>
               <elementProp name="aa[mac]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0A%3A1B%3A2C%3A3D%3A4E%3A55</stringProp>
+                <stringProp name="Argument.value">0A%3A1B%3A2C%3A3D%3A4E%3A54</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">aa[mac]</stringProp>
               </elementProp>
               <elementProp name="aa[nasid]" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">GLAAIR01</stringProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${site_nasid}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">aa[nasid]</stringProp>
               </elementProp>
               <elementProp name="aa[ssid]" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">Glasgow+Airport</stringProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${site_ssid}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">aa[ssid]</stringProp>
@@ -161,7 +173,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+          <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -230,7 +242,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+          <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -356,7 +368,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+          <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -415,7 +427,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+          <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -574,7 +586,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">www.google.co.uk</stringProp>
+          <stringProp name="HTTPSampler.domain">${non_whitelist_domain}</stringProp>
           <stringProp name="HTTPSampler.port">80</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
