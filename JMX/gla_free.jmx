@@ -72,8 +72,7 @@ vars.put(&quot;site_non_whitelist_example_path&quot; , &quot;/&quot;);
 vars.put(&quot;site_non_whitelist_example_expected_substring&quot; , &quot;I&apos;m Feeling Lucky&quot;);
 
 // The MAC address of the machine the tests are running from. Use uppercase!
-vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:4F&quot;);
-
+vars.put(&quot;mac_address&quot;, props.get(&quot;mac_address&quot;));
 
 //// Computed vars ////
 
