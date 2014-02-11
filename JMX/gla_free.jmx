@@ -71,8 +71,13 @@ vars.put(&quot;site_non_whitelist_example_domain&quot; , &quot;www.google.co.uk&
 vars.put(&quot;site_non_whitelist_example_path&quot; , &quot;/&quot;);
 vars.put(&quot;site_non_whitelist_example_expected_substring&quot; , &quot;I&apos;m Feeling Lucky&quot;);
 
-// The MAC address of the machine the tests are running from
-vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:52&quot;);
+// The MAC address of the machine the tests are running from. Use uppercase!
+vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:4F&quot;);
+
+
+//// Computed vars ////
+
+vars.put(&quot;device_id&quot;, vars.get(&quot;mac_address&quot;).replace(&quot;:&quot;, &quot;&quot;));
 
 vars.put(&quot;redirect_url&quot;,
   &quot;https://&quot; + vars.get(&quot;captive_portal_domain&quot;) + &quot;/?&quot; +
@@ -289,6 +294,15 @@ vars.put(&quot;redirect_url&quot;,
             <longProp name="html_assertion_format">0</longProp>
             <stringProp name="html_assertion_filename"></stringProp>
           </HTMLAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_device_id" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1645678816">Your Device ID: ${device_id}.</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_product_free_get" enabled="true">
