@@ -56,7 +56,7 @@
           <stringProp name="BeanShellSampler.query">import java.net.URLEncoder;
 
 // Change for staging/live
-vars.put(&quot;captive_portal_domain&quot;, &quot;staging.wifiservice.net&quot;);
+vars.put(&quot;captive_portal_domain&quot;, props.get(&quot;captive_portal.domain&quot;));
 
 // Site-specific configuration
 vars.put(&quot;site_nasid&quot;, props.get(&quot;site.nasid&quot;));
