@@ -10,64 +10,7 @@
         }
       ],
       "queryString": [],
-      "cookies": [
-        {
-          "name": "BBC-UID",
-          "value": "b5c2ef94bc4889870debad7ab1760745576d07e2f414210e1a51a4a42d05bb500Mozilla/5.0%20(X11%3b%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML%2c%20like%20Gecko)%20Chrome/32.0.1700.107%20Safari/537.36",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "ckns_policy",
-          "value": "111",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "s1",
-          "value": "52F4C8992F8502CD",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "ckpf_mandolin",
-          "value": "%22footer-promo%22%3A%7B%22segment%22%3A%22b%22%2C%22end%22%3A%221392378650281%22%7D",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "BGUID",
-          "value": "b5024f843cfee8c8471bc07cb120f91c0f8042531ec8a3c9f3b5ab24dc506688",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_chartbeat2",
-          "value": "5b5rlyb988lb1jup.1391775368978.1391775368978.1",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_chartbeat_uuniq",
-          "value": "1",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "ckpf_ww_mobile_js",
-          "value": "on",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        }
-      ]
+      "cookies": []
     },
     "response": {
       "status": 302,
@@ -75,7 +18,7 @@
       "headers": [
         {
           "name": "Location",
-          "value": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=DE%3AAD%3ADE%3AAD%3ABE%3AEF&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F"
+          "value": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=A4%3A4E%3A31%3A91%3A2B%3AE8&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F"
         },
         {
           "name": "Content-Type",
@@ -93,7 +36,7 @@
   {
     "request": {
       "method": "GET",
-      "url": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=DE%3AAD%3ADE%3AAD%3ABE%3AEF&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F",
+      "url": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=A4%3A4E%3A31%3A91%3A2B%3AE8&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F",
       "headers": [
         {
           "name": "Host",
@@ -107,7 +50,7 @@
         },
         {
           "name": "aa[mac]",
-          "value": "DE%3AAD%3ADE%3AAD%3ABE%3AEF"
+          "value": "A4%3A4E%3A31%3A91%3A2B%3AE8"
         },
         {
           "name": "aa[nasid]",
@@ -122,22 +65,7 @@
           "value": "http%3A%2F%2Fwww.bbc.co.uk%2F"
         }
       ],
-      "cookies": [
-        {
-          "name": "SESSID",
-          "value": "18ae4ec17f82c8bd42d135550e02a0743b097d72bcd1045f43bd6fb318dc132ade86c5c7fd099a60b9d0ad56020ab7fbf7a09abcfde00a68d451af59b7dc4987",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        }
-      ]
+      "cookies": []
     },
     "response": {
       "status": 200,
@@ -151,18 +79,27 @@
       "cookies": [
         {
           "name": "SESSID",
-          "value": "18ae4ec17f82c8bd42d135550e02a0743b097d72bcd1045f43bd6fb318dc132ade86c5c7fd099a60b9d0ad56020ab7fbf7a09abcfde00a68d451af59b7dc4987",
+          "value": "9b05d1aebd6848f34dcde50350d3857304190d0bc5f8d09257ff8ede0e1d40a52b6e510bc2ad5a56b4f397ded1b9cc19b0272a1b53de14d542bc9774af99ad8e",
           "path": "/",
           "domain": "staging.wifiservice.net",
-          "expires": "2014-02-10T18:24:36.000Z",
+          "expires": "2014-02-11T10:46:07.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "SESSID",
+          "value": "9b05d1aebd6848f34dcde50350d3857304190d0bc5f8d09257ff8ede0e1d40a52b6e510bc2ad5a56b4f397ded1b9cc19b0272a1b53de14d542bc9774af99ad8e",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-11T10:46:07.000Z",
           "httpOnly": true,
           "secure": true
         }
       ],
       "content": {
-        "size": 4022,
+        "size": 4058,
         "mimeType": "text/html",
-        "compression": 2446
+        "compression": 2468
       }
     }
   },
@@ -180,14 +117,14 @@
       "cookies": [
         {
           "name": "SESSID",
-          "value": "18ae4ec17f82c8bd42d135550e02a0743b097d72bcd1045f43bd6fb318dc132ade86c5c7fd099a60b9d0ad56020ab7fbf7a09abcfde00a68d451af59b7dc4987",
+          "value": "9b05d1aebd6848f34dcde50350d3857304190d0bc5f8d09257ff8ede0e1d40a52b6e510bc2ad5a56b4f397ded1b9cc19b0272a1b53de14d542bc9774af99ad8e",
           "expires": null,
           "httpOnly": false,
           "secure": false
         },
         {
           "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
+          "value": "GA1.3.1931347221.1392113948",
           "expires": null,
           "httpOnly": false,
           "secure": false
@@ -206,18 +143,18 @@
       "cookies": [
         {
           "name": "SESSID",
-          "value": "18ae4ec17f82c8bd42d135550e02a0743b097d72bcd1045f43bd6fb318dc132ade86c5c7fd099a60b9d0ad56020ab7fbf7a09abcfde00a68d451af59b7dc4987",
+          "value": "9b05d1aebd6848f34dcde50350d3857304190d0bc5f8d09257ff8ede0e1d40a52b6e510bc2ad5a56b4f397ded1b9cc19b0272a1b53de14d542bc9774af99ad8e",
           "path": "/",
           "domain": "staging.wifiservice.net",
-          "expires": "2014-02-10T18:24:47.000Z",
+          "expires": "2014-02-11T10:46:27.000Z",
           "httpOnly": true,
           "secure": true
         }
       ],
       "content": {
-        "size": 17396,
+        "size": 17456,
         "mimeType": "text/html",
-        "compression": 12346
+        "compression": 12368
       }
     }
   },
@@ -235,14 +172,14 @@
       "cookies": [
         {
           "name": "SESSID",
-          "value": "18ae4ec17f82c8bd42d135550e02a0743b097d72bcd1045f43bd6fb318dc132ade86c5c7fd099a60b9d0ad56020ab7fbf7a09abcfde00a68d451af59b7dc4987",
+          "value": "9b05d1aebd6848f34dcde50350d3857304190d0bc5f8d09257ff8ede0e1d40a52b6e510bc2ad5a56b4f397ded1b9cc19b0272a1b53de14d542bc9774af99ad8e",
           "expires": null,
           "httpOnly": false,
           "secure": false
         },
         {
           "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
+          "value": "GA1.3.1931347221.1392113948",
           "expires": null,
           "httpOnly": false,
           "secure": false
@@ -265,10 +202,10 @@
       "cookies": [
         {
           "name": "SESSID",
-          "value": "18ae4ec17f82c8bd42d135550e02a0743b097d72bcd1045f43bd6fb318dc132ade86c5c7fd099a60b9d0ad56020ab7fbf7a09abcfde00a68d451af59b7dc4987",
+          "value": "9b05d1aebd6848f34dcde50350d3857304190d0bc5f8d09257ff8ede0e1d40a52b6e510bc2ad5a56b4f397ded1b9cc19b0272a1b53de14d542bc9774af99ad8e",
           "path": "/",
           "domain": "staging.wifiservice.net",
-          "expires": "2014-02-10T18:25:09.000Z",
+          "expires": "2014-02-11T10:46:45.000Z",
           "httpOnly": true,
           "secure": true
         }
@@ -294,14 +231,14 @@
       "cookies": [
         {
           "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
+          "value": "GA1.3.1931347221.1392113948",
           "expires": null,
           "httpOnly": false,
           "secure": false
         },
         {
           "name": "SESSID",
-          "value": "18ae4ec17f82c8bd42d135550e02a0743b097d72bcd1045f43bd6fb318dc132ade86c5c7fd099a60b9d0ad56020ab7fbf7a09abcfde00a68d451af59b7dc4987",
+          "value": "9b05d1aebd6848f34dcde50350d3857304190d0bc5f8d09257ff8ede0e1d40a52b6e510bc2ad5a56b4f397ded1b9cc19b0272a1b53de14d542bc9774af99ad8e",
           "expires": null,
           "httpOnly": false,
           "secure": false
@@ -318,16 +255,16 @@
         },
         {
           "name": "Location",
-          "value": "https://glair01.wifiservice.net/login?username=0BIC43PykQ&password=pih0OyLsWz&dst=https%3A%2F%2Fstaging.wifiservice.net%2F&popup=false"
+          "value": "https://glair01.wifiservice.net/login?username=LbbFkou918&password=tMiIHVLxKA&dst=https%3A%2F%2Fstaging.wifiservice.net%2F&popup=false"
         }
       ],
       "cookies": [
         {
           "name": "SESSID",
-          "value": "18ae4ec17f82c8bd42d135550e02a0743b097d72bcd1045f43bd6fb318dc132ade86c5c7fd099a60b9d0ad56020ab7fbf7a09abcfde00a68d451af59b7dc4987",
+          "value": "9b05d1aebd6848f34dcde50350d3857304190d0bc5f8d09257ff8ede0e1d40a52b6e510bc2ad5a56b4f397ded1b9cc19b0272a1b53de14d542bc9774af99ad8e",
           "path": "/",
           "domain": "staging.wifiservice.net",
-          "expires": "2014-02-10T18:25:09.000Z",
+          "expires": "2014-02-11T10:46:46.000Z",
           "httpOnly": true,
           "secure": true
         }
@@ -342,7 +279,7 @@
   {
     "request": {
       "method": "GET",
-      "url": "https://glair01.wifiservice.net/login?username=0BIC43PykQ&password=pih0OyLsWz&dst=https%3A%2F%2Fstaging.wifiservice.net%2F&popup=false",
+      "url": "https://glair01.wifiservice.net/login?username=LbbFkou918&password=tMiIHVLxKA&dst=https%3A%2F%2Fstaging.wifiservice.net%2F&popup=false",
       "headers": [
         {
           "name": "Host",
@@ -352,11 +289,11 @@
       "queryString": [
         {
           "name": "username",
-          "value": "0BIC43PykQ"
+          "value": "LbbFkou918"
         },
         {
           "name": "password",
-          "value": "pih0OyLsWz"
+          "value": "tMiIHVLxKA"
         },
         {
           "name": "dst",
@@ -381,9 +318,9 @@
       "cookies": [
         {
           "name": "loginID",
-          "value": "1187525652",
+          "value": "2252224981",
           "path": "/login",
-          "expires": "2014-02-13T17:49:14.000Z",
+          "expires": "2014-02-14T10:13:46.000Z",
           "httpOnly": false,
           "secure": false
         }
@@ -409,14 +346,14 @@
       "cookies": [
         {
           "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
+          "value": "GA1.3.1931347221.1392113948",
           "expires": null,
           "httpOnly": false,
           "secure": false
         },
         {
           "name": "SESSID",
-          "value": "18ae4ec17f82c8bd42d135550e02a0743b097d72bcd1045f43bd6fb318dc132ade86c5c7fd099a60b9d0ad56020ab7fbf7a09abcfde00a68d451af59b7dc4987",
+          "value": "9b05d1aebd6848f34dcde50350d3857304190d0bc5f8d09257ff8ede0e1d40a52b6e510bc2ad5a56b4f397ded1b9cc19b0272a1b53de14d542bc9774af99ad8e",
           "expires": null,
           "httpOnly": false,
           "secure": false
@@ -435,10 +372,10 @@
       "cookies": [
         {
           "name": "SESSID",
-          "value": "18ae4ec17f82c8bd42d135550e02a0743b097d72bcd1045f43bd6fb318dc132ade86c5c7fd099a60b9d0ad56020ab7fbf7a09abcfde00a68d451af59b7dc4987",
+          "value": "9b05d1aebd6848f34dcde50350d3857304190d0bc5f8d09257ff8ede0e1d40a52b6e510bc2ad5a56b4f397ded1b9cc19b0272a1b53de14d542bc9774af99ad8e",
           "path": "/",
           "domain": "staging.wifiservice.net",
-          "expires": "2014-02-10T18:25:09.000Z",
+          "expires": "2014-02-11T10:46:46.000Z",
           "httpOnly": true,
           "secure": true
         }
@@ -446,7 +383,7 @@
       "content": {
         "size": 3950,
         "mimeType": "text/html",
-        "compression": 2280
+        "compression": 2278
       }
     }
   },
@@ -461,64 +398,7 @@
         }
       ],
       "queryString": [],
-      "cookies": [
-        {
-          "name": "BBC-UID",
-          "value": "b5c2ef94bc4889870debad7ab1760745576d07e2f414210e1a51a4a42d05bb500Mozilla/5.0%20(X11%3b%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML%2c%20like%20Gecko)%20Chrome/32.0.1700.107%20Safari/537.36",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "ckns_policy",
-          "value": "111",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "s1",
-          "value": "52F4C8992F8502CD",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "ckpf_mandolin",
-          "value": "%22footer-promo%22%3A%7B%22segment%22%3A%22b%22%2C%22end%22%3A%221392378650281%22%7D",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "BGUID",
-          "value": "b5024f843cfee8c8471bc07cb120f91c0f8042531ec8a3c9f3b5ab24dc506688",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_chartbeat2",
-          "value": "5b5rlyb988lb1jup.1391775368978.1391775368978.1",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_chartbeat_uuniq",
-          "value": "1",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "ckpf_ww_mobile_js",
-          "value": "on",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        }
-      ]
+      "cookies": []
     },
     "response": {
       "status": 200,
@@ -529,9 +409,19 @@
           "value": "text/html"
         }
       ],
-      "cookies": [],
+      "cookies": [
+        {
+          "name": "BBC-UID",
+          "value": "d5f23f19ff89c41a1a03d506319382963e637787d4d4716eba41f4ce4c26907c0Mozilla/5.0%20(X11%3b%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML%2c%20like%20Gecko)%20Chrome/32.0.1700.107%20Safari/537.36",
+          "path": "/",
+          "domain": ".bbc.co.uk",
+          "expires": "2018-02-10T10:19:54.000Z",
+          "httpOnly": false,
+          "secure": false
+        }
+      ],
       "content": {
-        "size": 130198,
+        "size": 128255,
         "mimeType": "text/html",
         "compression": -253
       }
