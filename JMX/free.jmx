@@ -539,9 +539,9 @@ vars.put(&quot;redirect_url&quot;,
             <intProp name="Assertion.test_type">2</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_location" enabled="false">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_location" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-1134618665">Location: https://glair01.wifiservice.net/login</stringProp>
+              <stringProp name="164700298">Location: https://${site_subdomain}/login</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
