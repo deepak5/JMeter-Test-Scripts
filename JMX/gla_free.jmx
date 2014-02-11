@@ -133,7 +133,7 @@
               </elementProp>
               <elementProp name="aa[mac]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0A%3A1B%3A2C%3A3D%3A4E%3A5D</stringProp>
+                <stringProp name="Argument.value">0A%3A1B%3A2C%3A3D%3A4E%3A55</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">aa[mac]</stringProp>
@@ -423,7 +423,7 @@
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
@@ -434,7 +434,7 @@
           <stringProp name="TestPlan.comments">This should send the SESSID and _ga</stringProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_code" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_code" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="50549">302</stringProp>
             </collectionProp>
@@ -443,7 +443,7 @@
             <intProp name="Assertion.test_type">8</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_message" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_message" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="1106337121">Moved Temporarily</stringProp>
             </collectionProp>
@@ -452,7 +452,7 @@
             <intProp name="Assertion.test_type">8</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_content_type" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_content_type" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="660921731">Content-Type: text/html; charset=UTF-8</stringProp>
             </collectionProp>
@@ -461,7 +461,7 @@
             <intProp name="Assertion.test_type">2</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_location" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_location" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1134618665">Location: https://glair01.wifiservice.net/login</stringProp>
             </collectionProp>
@@ -471,7 +471,7 @@
             <stringProp name="TestPlan.comments">Location actually ends with random user/pass details like ?username=fGmFVlbvMc&amp;password=ptvwotBFx5&amp;dst=https%3A%2F%2Fstaging.wifiservice.net%2F&amp;popup=false</stringProp>
           </ResponseAssertion>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_has_cookie_SESSID" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_has_cookie_SESSID" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1852470067">SESSID</stringProp>
             </collectionProp>
@@ -481,7 +481,7 @@
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_site_landing_page" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_site_landing_page" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="username" elementType="HTTPArgument">
@@ -574,7 +574,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">www.bbc.co.uk</stringProp>
+          <stringProp name="HTTPSampler.domain">www.google.co.uk</stringProp>
           <stringProp name="HTTPSampler.port">80</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
