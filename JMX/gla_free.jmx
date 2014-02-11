@@ -59,7 +59,7 @@
 vars.put(&quot;captive_portal_domain&quot;, &quot;staging.wifiservice.net&quot;);
 
 // Site-specific configuration
-vars.put(&quot;site_nasid&quot;, &quot;GLAAIR01&quot;);
+vars.put(&quot;site_nasid&quot;, props.get(&quot;site.nasid&quot;));
 vars.put(&quot;site_ssid&quot;, &quot;Glasgow Airport&quot;);
 vars.put(&quot;site_subdomain&quot;, &quot;glair01.wifiservice.net&quot;);
 
