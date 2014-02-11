@@ -115,13 +115,6 @@
           "expires": null,
           "httpOnly": false,
           "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
         }
       ]
     },
@@ -179,13 +172,6 @@
         {
           "name": "SESSID",
           "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
           "expires": null,
           "httpOnly": false,
           "secure": false
@@ -249,13 +235,6 @@
           "expires": null,
           "httpOnly": false,
           "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
         }
       ]
     },
@@ -305,13 +284,6 @@
         {
           "name": "SESSID-backend",
           "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
           "expires": null,
           "httpOnly": false,
           "secure": false
@@ -379,13 +351,6 @@
         {
           "name": "SESSID",
           "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
           "expires": null,
           "httpOnly": false,
           "secure": false
@@ -1049,13 +1014,6 @@
           "secure": false
         },
         {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
           "name": "SESSID",
           "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
           "expires": null,
@@ -1110,13 +1068,6 @@
         {
           "name": "SESSID-backend",
           "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
           "expires": null,
           "httpOnly": false,
           "secure": false
@@ -1240,13 +1191,6 @@
         {
           "name": "SESSID-backend",
           "value": "365f13eecd9495fef0b6a80ba865ec8fae34a9874a4a975a49aa6c172743a47a0a5aab72471698317595fa4dd80db5d44f05e69cf6752ce0959df5de7de26ebc",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
           "expires": null,
           "httpOnly": false,
           "secure": false

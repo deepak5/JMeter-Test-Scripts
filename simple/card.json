@@ -72,13 +72,6 @@
           "expires": null,
           "httpOnly": false,
           "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
         }
       ]
     },
@@ -129,13 +122,6 @@
         {
           "name": "SESSID",
           "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
           "expires": null,
           "httpOnly": false,
           "secure": false
@@ -192,13 +178,6 @@
           "expires": null,
           "httpOnly": false,
           "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
         }
       ]
     },
@@ -245,13 +224,6 @@
       ],
       "queryString": [],
       "cookies": [
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
         {
           "name": "SESSID",
           "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
@@ -306,13 +278,6 @@
           "expires": null,
           "httpOnly": false,
           "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
         }
       ]
     },
@@ -359,13 +324,6 @@
       ],
       "queryString": [],
       "cookies": [
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
         {
           "name": "SESSID",
           "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",
@@ -474,13 +432,6 @@
       ],
       "queryString": [],
       "cookies": [
-        {
-          "name": "_ga",
-          "value": "GA1.3.1361143851.1391523480",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
         {
           "name": "SESSID",
           "value": "18458aa8e055e0bb8e34a1c8f37f0e8de42449f23c7a7b9d5b03a07b47a94876a47ae1fdc10fa5606d96d53a040f56a5283cfd6ede401c03f142fd95a761c6c6",

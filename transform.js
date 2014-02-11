@@ -6,7 +6,7 @@ function transformRequest(request) {
     url: request.url,
     headers: request.headers.filter(function (header) { return ["Host"].indexOf(header.name) !== -1;}),
     queryString: request.queryString,
-    cookies: request.cookies
+    cookies: request.cookies.filter(function(cookie) { return cookie.name !== "_ga"; })  // Google Analytics
   };
 }
 

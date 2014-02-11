@@ -121,13 +121,6 @@
           "expires": null,
           "httpOnly": false,
           "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1162435502.1392114455",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
         }
       ]
     },
@@ -173,13 +166,6 @@
         {
           "name": "SESSID",
           "value": "921eb6335cd6c536971475d2ec7d3b71e2d074b544b9969cc800fdee8e6d43cad523ff078419c5dc36278b103b51dafae844188715e16ec10907d7d5a27ba229",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.3.1162435502.1392114455",
           "expires": null,
           "httpOnly": false,
           "secure": false
@@ -229,13 +215,6 @@
       ],
       "queryString": [],
       "cookies": [
-        {
-          "name": "_ga",
-          "value": "GA1.3.1162435502.1392114455",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
         {
           "name": "SESSID",
           "value": "921eb6335cd6c536971475d2ec7d3b71e2d074b544b9969cc800fdee8e6d43cad523ff078419c5dc36278b103b51dafae844188715e16ec10907d7d5a27ba229",
@@ -344,13 +323,6 @@
       ],
       "queryString": [],
       "cookies": [
-        {
-          "name": "_ga",
-          "value": "GA1.3.1162435502.1392114455",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        },
         {
           "name": "SESSID",
           "value": "921eb6335cd6c536971475d2ec7d3b71e2d074b544b9969cc800fdee8e6d43cad523ff078419c5dc36278b103b51dafae844188715e16ec10907d7d5a27ba229",
