@@ -62,8 +62,12 @@ vars.put(&quot;captive_portal_domain&quot;, &quot;staging.wifiservice.net&quot;)
 vars.put(&quot;site_nasid&quot;, &quot;GLAAIR01&quot;);
 vars.put(&quot;site_ssid&quot;, &quot;Glasgow Airport&quot;);
 vars.put(&quot;site_subdomain&quot;, &quot;glair01.wifiservice.net&quot;);
+
 vars.put(&quot;site_whitelist_example_domain&quot; , &quot;www.glasgow.com&quot;); // TODO test this one
+vars.put(&quot;site_whitelist_example_domain_expected_substring&quot; , &quot;Glasgow&quot;);
+
 vars.put(&quot;site_non_whitelist_example_domain&quot; , &quot;www.google.co.uk&quot;);
+vars.put(&quot;site_non_whitelist_example_domain_expected_substring&quot; , &quot;I&apos;m Feeling Lucky&quot;);
 
 // The MAC address of the machine the tests are running from
 vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:53&quot;);
@@ -526,8 +530,8 @@ vars.put(&quot;redirect_url&quot;,
                 <stringProp name="Argument.name">password</stringProp>
               </elementProp>
               <elementProp name="dst" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">https%3A%2F%2Fstaging.wifiservice.net%2F</stringProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">https://${captive_portal_domain}/</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">dst</stringProp>
