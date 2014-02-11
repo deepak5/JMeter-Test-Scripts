@@ -133,7 +133,7 @@
               </elementProp>
               <elementProp name="aa[mac]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0A%3A1B%3A2C%3A3D%3A4E%3A5F</stringProp>
+                <stringProp name="Argument.value">0A%3A1B%3A2C%3A3D%3A4E%3A5D</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">aa[mac]</stringProp>
@@ -297,7 +297,64 @@
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_product_free_post" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="ay[customer][title_id]" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">ay[customer][title_id]</stringProp>
+              </elementProp>
+              <elementProp name="ay[customer][first_name]" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">J</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">ay[customer][first_name]</stringProp>
+              </elementProp>
+              <elementProp name="ay[customer][last_name]" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">Meter</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">ay[customer][last_name]</stringProp>
+              </elementProp>
+              <elementProp name="ay[customer][email]" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">j@meter.tes</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">ay[customer][email]</stringProp>
+              </elementProp>
+              <elementProp name="ay[freeform][flight_destination]" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">ay[freeform][flight_destination]</stringProp>
+              </elementProp>
+              <elementProp name="ay[freeform][home_country]" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">ay[freeform][home_country]</stringProp>
+              </elementProp>
+              <elementProp name="ay[terms_and_conditions]" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">ay[terms_and_conditions]</stringProp>
+              </elementProp>
+              <elementProp name="ay[freeform][newsletter]" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">ay[freeform][newsletter]</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
@@ -352,15 +409,6 @@
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">2</intProp>
           </ResponseAssertion>
-          <hashTree/>
-          <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="response_body_is_html" enabled="true">
-            <longProp name="html_assertion_error_threshold">0</longProp>
-            <longProp name="html_assertion_warning_threshold">0</longProp>
-            <stringProp name="html_assertion_doctype">omit</stringProp>
-            <boolProp name="html_assertion_errorsonly">true</boolProp>
-            <longProp name="html_assertion_format">0</longProp>
-            <stringProp name="html_assertion_filename"></stringProp>
-          </HTMLAssertion>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_non_whitelist_url_succeeds" enabled="true">
