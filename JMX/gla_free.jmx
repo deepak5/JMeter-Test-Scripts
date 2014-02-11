@@ -53,11 +53,18 @@
         </ConfigTestElement>
         <hashTree/>
         <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="globals" enabled="true">
-          <stringProp name="BeanShellSampler.query">vars.put(&quot;non_whitelist_domain&quot;, &quot;www.google.co.uk&quot;);
+          <stringProp name="BeanShellSampler.query">// Change for staging/live
 vars.put(&quot;captive_portal_domain&quot;, &quot;staging.wifiservice.net&quot;);
 
+// Site-specific configuration
 vars.put(&quot;site_nasid&quot;, &quot;GLAAIR01&quot;);
 vars.put(&quot;site_ssid&quot;, &quot;Glasgow Airport&quot;);
+vars.put(&quot;site_subdomain&quot;, &quot;glair01.wifiservice.net&quot;);
+vars.put(&quot;site_whitelist_example_domain&quot; , &quot;www.glasgow.com&quot;); // TODO test this one
+vars.put(&quot;site_non_whitelist_example_domain&quot; , &quot;www.google.co.uk&quot;);
+
+// The MAC address of the machine the tests are running from
+vars.put(&quot;mac_address&quot;, &quot;0A:1B:2C:3D:4E:54&quot;);
 </stringProp>
           <stringProp name="BeanShellSampler.filename"></stringProp>
           <stringProp name="BeanShellSampler.parameters"></stringProp>
@@ -68,7 +75,7 @@ vars.put(&quot;site_ssid&quot;, &quot;Glasgow Airport&quot;);
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${non_whitelist_domain}</stringProp>
+          <stringProp name="HTTPSampler.domain">${site_non_whitelist_example_domain}</stringProp>
           <stringProp name="HTTPSampler.port">80</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -137,15 +144,15 @@ vars.put(&quot;site_ssid&quot;, &quot;Glasgow Airport&quot;);
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="aa[ac_url]" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">https%3A%2F%2Fglair01.wifiservice.net%2Flogin</stringProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">https://${captive_portal_domain}/login</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">aa[ac_url]</stringProp>
               </elementProp>
               <elementProp name="aa[mac]" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0A%3A1B%3A2C%3A3D%3A4E%3A54</stringProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${mac_address}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">aa[mac]</stringProp>
@@ -165,8 +172,8 @@ vars.put(&quot;site_ssid&quot;, &quot;Glasgow Airport&quot;);
                 <stringProp name="Argument.name">aa[ssid]</stringProp>
               </elementProp>
               <elementProp name="aa[orig_url]" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">http%3A%2F%2Fwww.bbc.co.uk%2F</stringProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">http://${site_non_whitelist_example_domain}/</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">aa[orig_url]</stringProp>
@@ -526,7 +533,7 @@ vars.put(&quot;site_ssid&quot;, &quot;Glasgow Airport&quot;);
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">glair01.wifiservice.net</stringProp>
+          <stringProp name="HTTPSampler.domain">${site_subdomain}</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -586,7 +593,7 @@ vars.put(&quot;site_ssid&quot;, &quot;Glasgow Airport&quot;);
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${non_whitelist_domain}</stringProp>
+          <stringProp name="HTTPSampler.domain">${site_non_whitelist_example_domain}</stringProp>
           <stringProp name="HTTPSampler.port">80</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
