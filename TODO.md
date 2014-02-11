@@ -1,0 +1,1 @@
+When trying to access the captive portal from a non-captive network, you get the response "Your Internet connection is unlimited."
