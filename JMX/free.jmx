@@ -86,12 +86,14 @@ vars.put(&quot;mac_address&quot;, props.get(&quot;mac_address&quot;));
 // This must always be blocked
 vars.put(&quot;blacklist_universal_example_domain&quot;, &quot;anonymizer.com&quot;);
 vars.put(&quot;blacklist_universal_example_path&quot;, &quot;/&quot;);
-vars.put(&quot;blacklist_universal_example_expected_substring&quot;, &quot;The document has moved&quot;);
+vars.put(&quot;blacklist_universal_example_content_substring&quot;, &quot;The document has moved&quot;);
+vars.put(&quot;blacklist_universal_example_expected_substring&quot;, &quot;FIXME&quot;);
 
 // This must ONLY be blocked if site_blacklist_type == &quot;public&quot;
 vars.put(&quot;blacklist_public_example_domain&quot;, &quot;porn.com&quot;);
 vars.put(&quot;blacklist_public_example_path&quot;, &quot;/&quot;);
-vars.put(&quot;blacklist_public_example_expected_substring&quot;, &quot;Free porn mega site&quot;);
+vars.put(&quot;blacklist_public_example_content_substring&quot;, &quot;Free porn mega site&quot;);
+vars.put(&quot;blacklist_public_example_expected_substring&quot;, &quot;FIXME&quot;);
 
 
 //// Computed vars ////
