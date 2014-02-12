@@ -74,6 +74,9 @@ vars.put(&quot;site_non_whitelist_example_expected_substring&quot;, props.get(&q
 // This must be either &quot;public&quot; or &quot;private&quot;
 vars.put(&quot;site_blacklist_type&quot;, props.get(&quot;site.blacklist.type&quot;));
 
+// TODO test this!
+vars.put(&quot;site_payment_method_free_mins&quot;, props.get(&quot;site.payment_method.free.mins&quot;));
+
 // The MAC address of the machine the tests are running from. Use uppercase!
 vars.put(&quot;mac_address&quot;, props.get(&quot;mac_address&quot;));
 
