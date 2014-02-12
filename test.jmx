@@ -61,7 +61,7 @@ vars.put(&quot;captive_portal_domain&quot;, props.get(&quot;captive_portal.domai
 // Site-specific configuration
 vars.put(&quot;site_nasid&quot;, props.get(&quot;site.nasid&quot;));
 vars.put(&quot;site_ssid&quot;, props.get(&quot;site.ssid&quot;));
-vars.put(&quot;site_subdomain&quot;, props.get(&quot;site.subdomain&quot;));
+vars.put(&quot;site_domain&quot;, props.get(&quot;site.domain&quot;));
 
 vars.put(&quot;site_whitelist_example_domain&quot;, props.get(&quot;site.whitelist.example.domain&quot;));
 vars.put(&quot;site_whitelist_example_path&quot;, props.get(&quot;site.whitelist.example.path&quot;));
@@ -113,7 +113,7 @@ vars.put(&quot;device_id&quot;, vars.get(&quot;mac_address&quot;).replace(&quot;
 
 vars.put(&quot;redirect_url&quot;,
   &quot;https://&quot; + vars.get(&quot;captive_portal_domain&quot;) + &quot;/?&quot; +
-  &quot;aa[ac_url]=https%3A%2F%2F&quot; + vars.get(&quot;site_subdomain&quot;) + &quot;%2Flogin&quot; +
+  &quot;aa[ac_url]=https%3A%2F%2F&quot; + vars.get(&quot;site_domain&quot;) + &quot;%2Flogin&quot; +
   &quot;&amp;aa[mac]=&quot; + java.net.URLEncoder.encode(vars.get(&quot;mac_address&quot;)) +
   &quot;&amp;aa[nasid]=&quot; + java.net.URLEncoder.encode(vars.get(&quot;site_nasid&quot;)) +
   &quot;&amp;aa[ssid]=&quot; + java.net.URLEncoder.encode(vars.get(&quot;site_ssid&quot;)) +
@@ -229,7 +229,7 @@ vars.put(&quot;redirect_url&quot;,
             <collectionProp name="Arguments.arguments">
               <elementProp name="aa[ac_url]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">https://${site_subdomain}/login</stringProp>
+                <stringProp name="Argument.value">https://${site_domain}/login</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">aa[ac_url]</stringProp>
@@ -580,7 +580,7 @@ vars.put(&quot;redirect_url&quot;,
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_location" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="164700298">Location: https://${site_subdomain}/login</stringProp>
+                <stringProp name="164700298">Location: https://${site_domain}/login</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -631,7 +631,7 @@ vars.put(&quot;redirect_url&quot;,
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${site_subdomain}</stringProp>
+            <stringProp name="HTTPSampler.domain">${site_domain}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
