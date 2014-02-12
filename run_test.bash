@@ -12,5 +12,6 @@ java \
   --addprop ./sites/${1}.properties \
   --jmeterproperty captive_portal.domain=${2} \
   --jmeterproperty mac_address=${3} \
-  --testfile ./JMX/${4}.jmx \
+  --jmeterproperty payment_method=${4} \
+  --testfile ./JMX/free.jmx \
   --logfile /dev/stdout
