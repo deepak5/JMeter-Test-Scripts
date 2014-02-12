@@ -677,6 +677,24 @@ vars.put(&quot;redirect_url&quot;,
             <hashTree/>
           </hashTree>
         </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="when_payment_card" enabled="true">
+          <stringProp name="IfController.condition">false</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree/>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="when_payment_paypal" enabled="true">
+          <stringProp name="IfController.condition">false</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree/>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="when_payment_roaming" enabled="true">
+          <stringProp name="IfController.condition">false</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_non_whitelist_url_succeeds_after_login" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
