@@ -42,7 +42,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+          <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -521,7 +521,7 @@ vars.put(&quot;redirect_url&quot;,
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_location" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1114295747">Location: https://staging.wifiservice.net/</stringProp>
+                <stringProp name="-1114295747">Location: https://${captive_portal_domain}/</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -585,7 +585,7 @@ vars.put(&quot;redirect_url&quot;,
               <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
-              <stringProp name="TestPlan.comments">Location actually ends with random user/pass details like ?username=fGmFVlbvMc&amp;password=ptvwotBFx5&amp;dst=https%3A%2F%2Fstaging.wifiservice.net%2F&amp;popup=false</stringProp>
+              <stringProp name="TestPlan.comments">Location actually ends with random user/pass details like ?username=fGmFVlbvMc&amp;password=ptvwotBFx5&amp;dst=https%3A%2F%2F${captive_portal_domain}%2F&amp;popup=false</stringProp>
             </ResponseAssertion>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_has_cookie_SESSID" enabled="true">
@@ -706,7 +706,7 @@ vars.put(&quot;redirect_url&quot;,
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+            <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -866,7 +866,7 @@ vars.put(&quot;redirect_url&quot;,
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+            <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -917,7 +917,7 @@ vars.put(&quot;redirect_url&quot;,
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+            <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -952,7 +952,7 @@ vars.put(&quot;redirect_url&quot;,
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+            <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1066,7 +1066,7 @@ vars.put(&quot;redirect_url&quot;,
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+            <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1096,7 +1096,7 @@ vars.put(&quot;redirect_url&quot;,
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+            <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1628,7 +1628,7 @@ vars.put(&quot;redirect_url&quot;,
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+            <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1691,7 +1691,7 @@ vars.put(&quot;redirect_url&quot;,
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">staging.wifiservice.net</stringProp>
+            <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
