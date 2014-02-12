@@ -1,0 +1,905 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "url": "http://www.google.co.uk/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "www.google.co.uk"
+        }
+      ],
+      "queryString": [],
+      "cookies": []
+    },
+    "response": {
+      "status": 307,
+      "statusText": "Temporary Redirect",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html"
+        },
+        {
+          "name": "Location",
+          "value": "https://n39.meraki.com/splash/?mac=00%3A18%3A0A%3A33%3A14%3A20&client_ip=10.171.69.173&client_mac=A4:4E:31:91:2B:E8&vap=12&a=1f0037c5e92481b35c84bc22d7e8f69c34365430&b=172264&auth_version=5&key=229ec8b4c30ba320a318d027b9b8f8028c9026a7&node_ip=6.51.20.32&acl_ver=P7297776V2&continue_url=http%3A%2F%2Fwww.google.co.uk%2F"
+        }
+      ],
+      "cookies": [],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://n39.meraki.com/splash/?mac=00%3A18%3A0A%3A33%3A14%3A20&client_ip=10.171.69.173&client_mac=A4:4E:31:91:2B:E8&vap=12&a=1f0037c5e92481b35c84bc22d7e8f69c34365430&b=172264&auth_version=5&key=229ec8b4c30ba320a318d027b9b8f8028c9026a7&node_ip=6.51.20.32&acl_ver=P7297776V2&continue_url=http%3A%2F%2Fwww.google.co.uk%2F",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "n39.meraki.com"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "mac",
+          "value": "00%3A18%3A0A%3A33%3A14%3A20"
+        },
+        {
+          "name": "client_ip",
+          "value": "10.171.69.173"
+        },
+        {
+          "name": "client_mac",
+          "value": "A4:4E:31:91:2B:E8"
+        },
+        {
+          "name": "vap",
+          "value": "12"
+        },
+        {
+          "name": "a",
+          "value": "1f0037c5e92481b35c84bc22d7e8f69c34365430"
+        },
+        {
+          "name": "b",
+          "value": "172264"
+        },
+        {
+          "name": "auth_version",
+          "value": "5"
+        },
+        {
+          "name": "key",
+          "value": "229ec8b4c30ba320a318d027b9b8f8028c9026a7"
+        },
+        {
+          "name": "node_ip",
+          "value": "6.51.20.32"
+        },
+        {
+          "name": "acl_ver",
+          "value": "P7297776V2"
+        },
+        {
+          "name": "continue_url",
+          "value": "http%3A%2F%2Fwww.google.co.uk%2F"
+        }
+      ],
+      "cookies": []
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Found",
+      "headers": [
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/?aa%5Bssid%5D=Haven%20WiFi&aa%5Bnasid%5D=MERHAVDEV01&login_url=https%3A%2F%2Fn39.meraki.com%2Fsplash%2Flogin%3Fmauth%3DMMSlzNXHrRFFweKRV0j5s5pRBqSXHRoLc3V9PC6nZW0M_Cn-ItHm_AOMF4baPl8ev7kFxry_zChkHfufI_5mGbl8MZxfqXRsrf_k-OPUqBDSEpjOYHWDLeu-Eovjp3MfKkeAXyaiQ7b1m469FpAgmOSJmOG_6esagRdx2BOKQ_9Xy0pEgfn6tI3WLz3X1ov_fTcROX4whG9MU%26continue_url%3Dhttp%253A%252F%252Fwww.google.co.uk%252F&continue_url=http%3A%2F%2Fwww.google.co.uk%2F&ap_mac=00%3A18%3A0a%3A33%3A14%3A20&ap_name=MERWCPWIN01_Winchester_Hemel&ap_tags=MERWCPSTA01+recently-added&client_mac=a4%3A4e%3A31%3A91%3A2b%3Ae8"
+        },
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "p_splash_session",
+          "value": "MM89zX67eckzoBuP_0gf7aztFrQd6rhaRxdf4Ys_FLshQgtAigfpUETTJ4MEFoX14rwJBzx-2hNC5o0P-D0i4scFuE4I1D2y3Ci3SOUkFW_ZRjtipj20fL2rmShKF6oX2J2ARuB7No_rEoqyBKENT7qYjvUaO3nPFPUw2tew5m6Y9bd0m4vuijwM93Yato6oxP4QNdEdd9oNP1dxEB_vBkUv-fGG4hz8EPPDFrKpRSO7VkoDsHtf-7wMb4-mcQzYY6zO4gX5sKYGerLkQs9WRGGB1yA7l4oHndhbIZsvy0g8v5tTth91Osv3r3x6q0mmBJ-1Z0gNQrn8fHDwMpULcerf5FFKqpO42GrxS_BDypuknTeLUj7RL_NsUgRuv6fWu0fmK2Y47wIx5OX0FOXcQZhfgpPgNXfahWil3Hti0_hL-1TSy89QKmpE0PYYPL7ObO3SdSUCROxsofAJsrk_C00Ge6j4Co1T1_FNszLx23U7Zl1meOzqsSLyUq92N7fBmz6rn1njgqqQo",
+          "path": "/",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": -1446
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/?aa%5Bssid%5D=Haven%20WiFi&aa%5Bnasid%5D=MERHAVDEV01&login_url=https%3A%2F%2Fn39.meraki.com%2Fsplash%2Flogin%3Fmauth%3DMMSlzNXHrRFFweKRV0j5s5pRBqSXHRoLc3V9PC6nZW0M_Cn-ItHm_AOMF4baPl8ev7kFxry_zChkHfufI_5mGbl8MZxfqXRsrf_k-OPUqBDSEpjOYHWDLeu-Eovjp3MfKkeAXyaiQ7b1m469FpAgmOSJmOG_6esagRdx2BOKQ_9Xy0pEgfn6tI3WLz3X1ov_fTcROX4whG9MU%26continue_url%3Dhttp%253A%252F%252Fwww.google.co.uk%252F&continue_url=http%3A%2F%2Fwww.google.co.uk%2F&ap_mac=00%3A18%3A0a%3A33%3A14%3A20&ap_name=MERWCPWIN01_Winchester_Hemel&ap_tags=MERWCPSTA01+recently-added&client_mac=a4%3A4e%3A31%3A91%3A2b%3Ae8",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "aa%5Bssid%5D",
+          "value": "Haven%20WiFi"
+        },
+        {
+          "name": "aa%5Bnasid%5D",
+          "value": "MERHAVDEV01"
+        },
+        {
+          "name": "login_url",
+          "value": "https%3A%2F%2Fn39.meraki.com%2Fsplash%2Flogin%3Fmauth%3DMMSlzNXHrRFFweKRV0j5s5pRBqSXHRoLc3V9PC6nZW0M_Cn-ItHm_AOMF4baPl8ev7kFxry_zChkHfufI_5mGbl8MZxfqXRsrf_k-OPUqBDSEpjOYHWDLeu-Eovjp3MfKkeAXyaiQ7b1m469FpAgmOSJmOG_6esagRdx2BOKQ_9Xy0pEgfn6tI3WLz3X1ov_fTcROX4whG9MU%26continue_url%3Dhttp%253A%252F%252Fwww.google.co.uk%252F"
+        },
+        {
+          "name": "continue_url",
+          "value": "http%3A%2F%2Fwww.google.co.uk%2F"
+        },
+        {
+          "name": "ap_mac",
+          "value": "00%3A18%3A0a%3A33%3A14%3A20"
+        },
+        {
+          "name": "ap_name",
+          "value": "MERWCPWIN01_Winchester_Hemel"
+        },
+        {
+          "name": "ap_tags",
+          "value": "MERWCPSTA01+recently-added"
+        },
+        {
+          "name": "client_mac",
+          "value": "a4%3A4e%3A31%3A91%3A2b%3Ae8"
+        }
+      ],
+      "cookies": []
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:01:59.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:01:59.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 5972,
+        "mimeType": "text/html",
+        "compression": 3769
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/products/free",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:18.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 6097,
+        "mimeType": "text/html",
+        "compression": 3773
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "url": "https://staging.wifiservice.net/products/free",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:36.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://n39.meraki.com/splash/grant_user_access?key=MOEW8Im6bdi2JDvsconovXwyA0i3RuIjtxg8QRMA4n2ENMi672HjUaPkCS2K8QLcxQuTpaTUEoMdcwYzAGhfmMeXP-vc9u9TxbdwsvmT8_cGIwaqGjlffep0HMqQGMCbcJ01aD3prI5AIyAKY0zA4w9HUHOj8SYanmbQ4EIUzcU3tVqPYnHTVLnp4CT2pDjPGEkBLeXJe6UdvUVtOIUO-678S40VKlNeN8rua3VLedogdKJHgl5F12MAmFgnaKbsFv3jH1Q6h4qZX0XFMLWC3NLM46exAC2FLSdJku30sCw2n6zfHwDumcnwiVjJJitZmONvZ05-oIkyCn2dVRo33eKcBrtq02Yg4TVn29jWEgQX3Pp7eCFL2RGXFAZY0fkeBR3UTAy8mKgEmuyPBa3DpX472ZWC_GvHZkGqdiDpElvZbHSrrlerpniDaevaIXoTv0sAl2OAkB27K3sGxx_7bTk8c-dugCtK_FEHvq8tzjTU-ieO8PYRgllTLihSUCcIWiIDeeRXv6PiyH_NW2MJrXczvfR4lTBji4Aga8gvbjXt8--II7YbGISfqPN3ASrchOb1OVddOa_64NR29dKyoY3xAmYsUGoT6nNYe2VwiFE7BQ_w"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:37.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://n39.meraki.com/splash/grant_user_access?key=MOEW8Im6bdi2JDvsconovXwyA0i3RuIjtxg8QRMA4n2ENMi672HjUaPkCS2K8QLcxQuTpaTUEoMdcwYzAGhfmMeXP-vc9u9TxbdwsvmT8_cGIwaqGjlffep0HMqQGMCbcJ01aD3prI5AIyAKY0zA4w9HUHOj8SYanmbQ4EIUzcU3tVqPYnHTVLnp4CT2pDjPGEkBLeXJe6UdvUVtOIUO-678S40VKlNeN8rua3VLedogdKJHgl5F12MAmFgnaKbsFv3jH1Q6h4qZX0XFMLWC3NLM46exAC2FLSdJku30sCw2n6zfHwDumcnwiVjJJitZmONvZ05-oIkyCn2dVRo33eKcBrtq02Yg4TVn29jWEgQX3Pp7eCFL2RGXFAZY0fkeBR3UTAy8mKgEmuyPBa3DpX472ZWC_GvHZkGqdiDpElvZbHSrrlerpniDaevaIXoTv0sAl2OAkB27K3sGxx_7bTk8c-dugCtK_FEHvq8tzjTU-ieO8PYRgllTLihSUCcIWiIDeeRXv6PiyH_NW2MJrXczvfR4lTBji4Aga8gvbjXt8--II7YbGISfqPN3ASrchOb1OVddOa_64NR29dKyoY3xAmYsUGoT6nNYe2VwiFE7BQ_w",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "n39.meraki.com"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "key",
+          "value": "MOEW8Im6bdi2JDvsconovXwyA0i3RuIjtxg8QRMA4n2ENMi672HjUaPkCS2K8QLcxQuTpaTUEoMdcwYzAGhfmMeXP-vc9u9TxbdwsvmT8_cGIwaqGjlffep0HMqQGMCbcJ01aD3prI5AIyAKY0zA4w9HUHOj8SYanmbQ4EIUzcU3tVqPYnHTVLnp4CT2pDjPGEkBLeXJe6UdvUVtOIUO-678S40VKlNeN8rua3VLedogdKJHgl5F12MAmFgnaKbsFv3jH1Q6h4qZX0XFMLWC3NLM46exAC2FLSdJku30sCw2n6zfHwDumcnwiVjJJitZmONvZ05-oIkyCn2dVRo33eKcBrtq02Yg4TVn29jWEgQX3Pp7eCFL2RGXFAZY0fkeBR3UTAy8mKgEmuyPBa3DpX472ZWC_GvHZkGqdiDpElvZbHSrrlerpniDaevaIXoTv0sAl2OAkB27K3sGxx_7bTk8c-dugCtK_FEHvq8tzjTU-ieO8PYRgllTLihSUCcIWiIDeeRXv6PiyH_NW2MJrXczvfR4lTBji4Aga8gvbjXt8--II7YbGISfqPN3ASrchOb1OVddOa_64NR29dKyoY3xAmYsUGoT6nNYe2VwiFE7BQ_w"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "p_splash_session",
+          "value": "MM89zX67eckzoBuP_0gf7aztFrQd6rhaRxdf4Ys_FLshQgtAigfpUETTJ4MEFoX14rwJBzx-2hNC5o0P-D0i4scFuE4I1D2y3Ci3SOUkFW_ZRjtipj20fL2rmShKF6oX2J2ARuB7No_rEoqyBKENT7qYjvUaO3nPFPUw2tew5m6Y9bd0m4vuijwM93Yato6oxP4QNdEdd9oNP1dxEB_vBkUv-fGG4hz8EPPDFrKpRSO7VkoDsHtf-7wMb4-mcQzYY6zO4gX5sKYGerLkQs9WRGGB1yA7l4oHndhbIZsvy0g8v5tTth91Osv3r3x6q0mmBJ-1Z0gNQrn8fHDwMpULcerf5FFKqpO42GrxS_BDypuknTeLUj7RL_NsUgRuv6fWu0fmK2Y47wIx5OX0FOXcQZhfgpPgNXfahWil3Hti0_hL-1TSy89QKmpE0PYYPL7ObO3SdSUCROxsofAJsrk_C00Ge6j4Co1T1_FNszLx23U7Zl1meOzqsSLyUq92N7fBmz6rn1njgqqQo",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Found",
+      "headers": [
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/"
+        }
+      ],
+      "cookies": [],
+      "content": {
+        "size": 0,
+        "mimeType": "",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:37.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:38.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:38.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:38.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:39.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:39.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:40.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "2e277677d60b85db19b752bbc956289dcf2900ae540bae2557e5cd24d656952d1e9f80706536ccd2df2d04a2bbe3f1137e57e3e344795fd4cf50c775c1ca3f31",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-12T13:02:42.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 6876,
+        "mimeType": "text/html",
+        "compression": 4313
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "http://arqiva.asia/latency/?aa[register]=1392208362435.2&aa[product][session][id]=18947122",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "arqiva.asia"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "aa[register]",
+          "value": "1392208362435.2"
+        },
+        {
+          "name": "aa[product][session][id]",
+          "value": "18947122"
+        }
+      ],
+      "cookies": []
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "http://www.google.co.uk/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "www.google.co.uk"
+        }
+      ],
+      "queryString": [],
+      "cookies": []
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Found",
+      "headers": [
+        {
+          "name": "Location",
+          "value": "https://www.google.co.uk/"
+        },
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "PREF",
+          "value": "ID=fae151af7e96d5e0:FF=0:TM=1392208377:LM=1392208377:S=IopbgvsgksSGcV4G",
+          "path": "/",
+          "domain": ".google.co.uk",
+          "expires": "2016-02-12T12:32:57.000Z",
+          "httpOnly": false,
+          "secure": false
+        },
+        {
+          "name": "NID",
+          "value": "67=j5BD_09TOX-FBoXpTva30eW4djQMnm2JsPddE0qN7L94I_LyJnE39XJXOzqQENexLpIhfmQCpY7a2vttl4jDt44AyXJ3YXP9YQzWTGghzfiDHiCIHmDbyiy_bGPpiajH",
+          "path": "/",
+          "domain": ".google.co.uk",
+          "expires": "2014-08-14T12:32:57.000Z",
+          "httpOnly": true,
+          "secure": false
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": -222
+      }
+    }
+  }
+]

@@ -48,6 +48,11 @@ function relevant(entry) {
     , /^https:\/\/.*\.mediaplex\.com\//g
     , /\.gif$/g
     , /^https:\/\/.*\.omtrdc\.net\//g
+    , /^https:\/\/www\.google\.co\.uk\//g
+    , /^https:\/\/ssl\.gstatic\.com\//g
+    , /^https:\/\/www\.google\.com\//g
+    , /^https:\/\/www\.gstatic\.com\//g
+    , /^https:\/\/apis\.google\.com\//g
     ];
 
   return exclude.filter(function (regex) { return regex.test(entry.request.url); }).length === 0;
