@@ -339,7 +339,7 @@ vars.put(&quot;redirect_url&quot;,
           <hashTree/>
         </hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="when_payment_free" enabled="true">
-          <stringProp name="IfController.condition">true</stringProp>
+          <stringProp name="IfController.condition">${payment_method} == &quot;free&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
           <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
@@ -689,7 +689,7 @@ vars.put(&quot;redirect_url&quot;,
           </hashTree>
         </hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="when_payment_card" enabled="true">
-          <stringProp name="IfController.condition">false</stringProp>
+          <stringProp name="IfController.condition">${payment_method} == &quot;card&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
           <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
@@ -889,7 +889,7 @@ vars.put(&quot;redirect_url&quot;,
           <hashTree/>
         </hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="when_payment_paypal" enabled="true">
-          <stringProp name="IfController.condition">false</stringProp>
+          <stringProp name="IfController.condition">${payment_method} == &quot;paypal&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
           <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
@@ -1573,7 +1573,7 @@ vars.put(&quot;redirect_url&quot;,
           <hashTree/>
         </hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="when_payment_roaming" enabled="true">
-          <stringProp name="IfController.condition">false</stringProp>
+          <stringProp name="IfController.condition">${payment_method} == &quot;roaming&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
           <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
