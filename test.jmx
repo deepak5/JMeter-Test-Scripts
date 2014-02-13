@@ -845,6 +845,24 @@ vars.put(&quot;redirect_url&quot;,
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_logoff_url" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="410252722">&lt;LogoffURL&gt;http://${site_domain}/logout&lt;/LogoffURL&gt;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_redirection_url" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="232356173">&lt;RedirectionURL&gt;https://${captive_portal_domain}/&lt;/RedirectionURL&gt;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="when_payment_card" enabled="true">
