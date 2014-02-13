@@ -5,4 +5,4 @@
 # Clear the log file
 # echo '' > ${logfile}
 
-./run_test.bash "GLAAIR01" "staging.wifiservice.net" "0A:1B:2C:3D:4E:31" "paypal" #> ${logfile}
+./run_test.bash "GLAAIR01" "staging.wifiservice.net" "0A:1B:2C:3D:4E:25" "free" #> ${logfile}
