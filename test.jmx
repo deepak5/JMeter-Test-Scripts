@@ -734,7 +734,7 @@ vars.put(&quot;redirect_url&quot;,
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
+              <intProp name="Assertion.test_type">16</intProp>
               <stringProp name="TestPlan.comments">Location actually ends with random user/pass details like ?username=fGmFVlbvMc&amp;password=ptvwotBFx5&amp;dst=https%3A%2F%2F${captive_portal_domain}%2F&amp;popup=false</stringProp>
             </ResponseAssertion>
             <hashTree/>
@@ -830,6 +830,16 @@ vars.put(&quot;redirect_url&quot;,
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_content_type" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-1857870375">Content-Type: text/html</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+              <stringProp name="TestPlan.comments">It&apos;s not really HTML, it&apos;s some commented-out XML. Don&apos;t know what it&apos;s for.</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_refresh" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="519194680">Refresh: 0; url=https://${captive_portal_domain}/</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
