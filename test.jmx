@@ -74,11 +74,6 @@ vars.put(&quot;site_non_whitelist_example_expected_substring&quot;, props.get(&q
 // This must be either &quot;public&quot; or &quot;private&quot;
 vars.put(&quot;site_blacklist_type&quot;, props.get(&quot;site.blacklist.type&quot;));
 
-// TODO test this! Specifically that:
-//   it says this in the landing pages;
-//   after X-1 minutes, pages are accessible;
-//   after X+1 minutes, pages are not accessible
-//   after X+1 minutes, the landing pages say you&apos;ve used your quota
 vars.put(&quot;site_payment_method_free_mins&quot;, props.get(&quot;site.payment_method.free.mins&quot;));
 
 // The MAC address of the machine the tests are running from. Use uppercase!
@@ -86,9 +81,6 @@ vars.put(&quot;mac_address&quot;, props.get(&quot;mac_address&quot;));
 
 
 //// Other constants ////
-
-// TODO test these
-// TODO test DNS, not HTTP
 
 // This must always be blocked
 vars.put(&quot;blacklist_universal_example_domain&quot;, &quot;anonymizer.com&quot;);
