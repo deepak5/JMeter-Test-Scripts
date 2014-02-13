@@ -1,0 +1,302 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "url": "http://www.bbc.co.uk/",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "www.bbc.co.uk"
+        }
+      ],
+      "queryString": [],
+      "cookies": []
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Hotspot login required",
+      "headers": [
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=0A%3A1B%3A2C%3A3D%3A4E%3A1C&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F"
+        },
+        {
+          "name": "Content-Type",
+          "value": "text/html"
+        }
+      ],
+      "cookies": [],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": -135
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/?aa[ac_url]=https%3A%2F%2Fglair01.wifiservice.net%2Flogin&aa[mac]=0A%3A1B%3A2C%3A3D%3A4E%3A1C&aa[nasid]=GLAAIR01&aa[ssid]=Glasgow+Airport&aa[orig_url]=http%3A%2F%2Fwww.bbc.co.uk%2F",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [
+        {
+          "name": "aa[ac_url]",
+          "value": "https%3A%2F%2Fglair01.wifiservice.net%2Flogin"
+        },
+        {
+          "name": "aa[mac]",
+          "value": "0A%3A1B%3A2C%3A3D%3A4E%3A1C"
+        },
+        {
+          "name": "aa[nasid]",
+          "value": "GLAAIR01"
+        },
+        {
+          "name": "aa[ssid]",
+          "value": "Glasgow+Airport"
+        },
+        {
+          "name": "aa[orig_url]",
+          "value": "http%3A%2F%2Fwww.bbc.co.uk%2F"
+        }
+      ],
+      "cookies": []
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "bd229069818732f0de51ffd394c11029108225520f7fbb144981b803d6d36253f2c0a8295e8342d6b71bedc865cc73be5411542861b03e49a768e51f3bed0fc4",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-13T16:44:19.000Z",
+          "httpOnly": true,
+          "secure": true
+        },
+        {
+          "name": "SESSID",
+          "value": "bd229069818732f0de51ffd394c11029108225520f7fbb144981b803d6d36253f2c0a8295e8342d6b71bedc865cc73be5411542861b03e49a768e51f3bed0fc4",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-13T16:44:19.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 4022,
+        "mimeType": "text/html",
+        "compression": 2443
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/product/free",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "bd229069818732f0de51ffd394c11029108225520f7fbb144981b803d6d36253f2c0a8295e8342d6b71bedc865cc73be5411542861b03e49a768e51f3bed0fc4",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "bd229069818732f0de51ffd394c11029108225520f7fbb144981b803d6d36253f2c0a8295e8342d6b71bedc865cc73be5411542861b03e49a768e51f3bed0fc4",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-13T16:44:31.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 17396,
+        "mimeType": "text/html",
+        "compression": 12345
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/product/free",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "bd229069818732f0de51ffd394c11029108225520f7fbb144981b803d6d36253f2c0a8295e8342d6b71bedc865cc73be5411542861b03e49a768e51f3bed0fc4",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "bd229069818732f0de51ffd394c11029108225520f7fbb144981b803d6d36253f2c0a8295e8342d6b71bedc865cc73be5411542861b03e49a768e51f3bed0fc4",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-13T16:46:46.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 17396,
+        "mimeType": "text/html",
+        "compression": 12345
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "url": "https://staging.wifiservice.net/product/free",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "bd229069818732f0de51ffd394c11029108225520f7fbb144981b803d6d36253f2c0a8295e8342d6b71bedc865cc73be5411542861b03e49a768e51f3bed0fc4",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 302,
+      "statusText": "Moved Temporarily",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "name": "Location",
+          "value": "https://staging.wifiservice.net/product/free"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "bd229069818732f0de51ffd394c11029108225520f7fbb144981b803d6d36253f2c0a8295e8342d6b71bedc865cc73be5411542861b03e49a768e51f3bed0fc4",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-13T16:47:03.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 0,
+        "mimeType": "text/html",
+        "compression": 0
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://staging.wifiservice.net/product/free",
+      "headers": [
+        {
+          "name": "Host",
+          "value": "staging.wifiservice.net"
+        }
+      ],
+      "queryString": [],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "bd229069818732f0de51ffd394c11029108225520f7fbb144981b803d6d36253f2c0a8295e8342d6b71bedc865cc73be5411542861b03e49a768e51f3bed0fc4",
+          "expires": null,
+          "httpOnly": false,
+          "secure": false
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "SESSID",
+          "value": "bd229069818732f0de51ffd394c11029108225520f7fbb144981b803d6d36253f2c0a8295e8342d6b71bedc865cc73be5411542861b03e49a768e51f3bed0fc4",
+          "path": "/",
+          "domain": "staging.wifiservice.net",
+          "expires": "2014-02-13T16:47:03.000Z",
+          "httpOnly": true,
+          "secure": true
+        }
+      ],
+      "content": {
+        "size": 17555,
+        "mimeType": "text/html",
+        "compression": 12432
+      }
+    }
+  }
+]

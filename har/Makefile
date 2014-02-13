@@ -1,7 +1,10 @@
-all: simple/free.json simple/card.json simple/paypal.json simple/redirect_when_not_logged_in.json simple/haven/free.json
+all: simple/free.json simple/free_invalid_customer_details_missing_email.json simple/card.json simple/paypal.json simple/redirect_when_not_logged_in.json simple/haven/free.json
 
 simple/free.json: HAR/free.json
 	./transform.js HAR/free.json > simple/free.json
+
+simple/free_invalid_customer_details_missing_email.json: HAR/free_invalid_customer_details_missing_email.json
+	./transform.js HAR/free_invalid_customer_details_missing_email.json > simple/free_invalid_customer_details_missing_email.json
 
 simple/haven/free.json: HAR/haven/free.json
 	mkdir -p simple/haven
