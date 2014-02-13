@@ -60,8 +60,12 @@ vars.put(&quot;captive_portal_domain&quot;, props.get(&quot;captive_portal.domai
 
 // Site-specific configuration
 vars.put(&quot;site_nasid&quot;, props.get(&quot;site.nasid&quot;));
+
 vars.put(&quot;site_ssid&quot;, props.get(&quot;site.ssid&quot;));
+
 vars.put(&quot;site_domain&quot;, props.get(&quot;site.domain&quot;));
+
+vars.put(&quot;site_heading&quot;, props.get(&quot;site.heading&quot;));
 
 vars.put(&quot;site_whitelist_example_domain&quot;, props.get(&quot;site.whitelist.example.domain&quot;));
 vars.put(&quot;site_whitelist_example_path&quot;, props.get(&quot;site.whitelist.example.path&quot;));
@@ -320,6 +324,15 @@ vars.put(&quot;redirect_url&quot;,
             <stringProp name="html_assertion_filename"></stringProp>
           </HTMLAssertion>
           <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_site_heading" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="279684412">${site_heading}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_device_id" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="1645678816">Your Device ID: ${device_id}.</stringProp>
@@ -403,11 +416,20 @@ vars.put(&quot;redirect_url&quot;,
               <stringProp name="html_assertion_filename"></stringProp>
             </HTMLAssertion>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_expected_substring" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_site_heading" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="279684412">${site_heading}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_form_instructions" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="642832560">To get online for free, please enter your details.</stringProp>
               </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
@@ -521,6 +543,15 @@ vars.put(&quot;redirect_url&quot;,
               <longProp name="html_assertion_format">0</longProp>
               <stringProp name="html_assertion_filename"></stringProp>
             </HTMLAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_site_heading" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="279684412">${site_heading}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_error_message" enabled="true">
               <collectionProp name="Asserion.test_strings">
