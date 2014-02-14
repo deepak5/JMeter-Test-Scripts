@@ -343,10 +343,13 @@ secure HTTP:
   client-specific state. Under some conditions, it returns a 302 to the
   captive portal HTTP service. (TODO)
 
-* `/login`. This accepts
+* `/login`. This accepts `GET` requests (!) in two forms:
 
-  * `GET` requests (!) with your `loginID` cookie. Logs you back in.
-  * `POST` requests that include: TODO
+  * containing the query fields `username` and `password` (both strings), and
+    `dst`, a URL. It does some stuff (TODO) and the response contains a cookie
+    `loginID` and redirects to the `dst` URL.
+
+  * containing your `loginID` cookie. This logs you back in.
 
 * `/logout`.
 * ...
