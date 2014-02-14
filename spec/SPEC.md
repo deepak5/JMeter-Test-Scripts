@@ -288,6 +288,70 @@ inserts the MAC address into its set of MAC addresses.
 TODO
 
 
+# Worked example
+
+We take the staging instance of the Glasgow Airport site as an example. This
+is available from the office at One Park Lane as SSID `!Staging_GLA`. The
+Glasgow Airport site is identified internally at Arqiva WiFi with the NASID
+"GLAAIR01".
+
+
+## DNS
+
+When connecting to a network, some IP addresses are given to you, telling you
+about local resources. In particular, in your connection details you will see
+
+* The IP address of a gateway. This is the same gateway shown in the above
+  diagram.
+* IP addresses of one or two DNS servers.
+
+The DNS server IP addresses will be the same as the gateway -- that is, the
+client is recommended to use the gateway as its DNS server. (It doesn't have
+to, though: you can manually change your DNS settings.)
+
+The provided DNS server provides DNS for:
+
+* the domain `glair01.wifiservice.net`. This resolves to the IP of the gateway
+  itself. (Presumably, the subdomain name is supposed to be the NASID, but has
+  a typo.)
+* the domain `staging.wifiservice.net`. This resolves to the captive portal
+  server. (Notice that the servers on subdomains of `wifiservice.net` are not
+  on the same physical machine.)
+* "external" domains on the internet. These resolve correctly for all domains:
+  not only "whitelisted" domains like `www.paypal.com` and `arqivawifi.com`,
+  but also non-whitelisted domains like `bbc.co.uk` and `google.com`.
+
+
+## HTTP
+
+The "captive portal" concept uses HTTP for its authentication and payment
+processes. As an end-user, there are two key HTTP services you interact with.
+
+One HTTP service runs on the gateway. We will call this the *gateway HTTP
+service*. The gateway HTTP service exposes the following resources over non-
+secure HTTP:
+
+* `/status`. This accepts `GET` requests and provides information on: TODO
+* `/login`. This accepts `POST` requests that include: TODO
+* `/logout`. This accepts `GET` requests (!)
+* ...
+
+Another HTTP service runs on the captive portal server. We will call this the
+*captive portal HTTP service*. It exposes the following resources over secure
+HTTP (`https`):
+
+* `/`
+* `/product/free`
+* `/product/billing`
+* `/product/payment`
+* `/product/roaming`
+* ...
+
+
+## Payment process
+
+
+
 
 # TODO
 
