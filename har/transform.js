@@ -53,6 +53,7 @@ function relevant(entry) {
     , /^https:\/\/www\.google\.com\//g
     , /^https:\/\/www\.gstatic\.com\//g
     , /^https:\/\/apis\.google\.com\//g
+    , /^https:\/\/lhr\.wifiservice\.net\/static\//g
     ];
 
   return exclude.filter(function (regex) { return regex.test(entry.request.url); }).length === 0;

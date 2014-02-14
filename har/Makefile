@@ -1,4 +1,4 @@
-all: simple/free.json simple/free_invalid_customer_details_missing_email.json simple/card.json simple/paypal.json simple/redirect_when_not_logged_in.json simple/haven/free.json
+all: simple/free.json simple/free_invalid_customer_details_missing_email.json simple/card.json simple/paypal.json simple/redirect_when_not_logged_in.json simple/haven/free.json simple/heathrow/free.json
 
 simple/free.json: HAR/free.json
 	./transform.js HAR/free.json > simple/free.json
@@ -9,6 +9,10 @@ simple/free_invalid_customer_details_missing_email.json: HAR/free_invalid_custom
 simple/haven/free.json: HAR/haven/free.json
 	mkdir -p simple/haven
 	./transform.js HAR/haven/free.json > simple/haven/free.json
+
+simple/heathrow/free.json: HAR/heathrow/free.json
+	mkdir -p simple/heathrow
+	./transform.js HAR/heathrow/free.json > simple/heathrow/free.json
 
 simple/card.json: HAR/card.json
 	./transform.js HAR/card.json > simple/card.json

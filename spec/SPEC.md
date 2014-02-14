@@ -418,6 +418,10 @@ MAC address forgery!
 
 Client details (username/password)
 
+Note that MAC addresses are shared between sites! If you log in on one site
+with MAC address M and username U, then access another site with MAC address
+M, it will say, "Welcome back, U".
+
 
 # Glossary
 

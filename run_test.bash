@@ -7,7 +7,6 @@
 
 java \
   -jar ./bin/apache-jmeter-2.11/bin/ApacheJMeter.jar \
-  --nongui \
   --propfile ./jmeter.properties \
   --addprop ./sites/${1}.properties \
   --jmeterproperty captive_portal.domain=${2} \
