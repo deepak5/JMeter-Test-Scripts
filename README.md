@@ -6,6 +6,9 @@ captive portal login and payment processes. This test suite is implemented
 using JMeter as an HTTP client. It only does correctness testing; no
 performance testing is involved.
 
+For a more lengthy description of the services that this test suite is
+actually testing, see `./spec/SPEC.md`.
+
 This test suite is intended to run on:
 
 * developers' machines, for developers to test changes in their development
