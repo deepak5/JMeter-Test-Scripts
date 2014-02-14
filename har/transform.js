@@ -14,7 +14,7 @@ function transformResponse(response) {
   return {
     status: response.status,
     statusText: response.statusText,
-    headers: response.headers.filter(function(header) { return ["Location", "Content-Type"].indexOf(header.name) !== -1; }),
+    headers: response.headers.filter(function(header) { return ["Location", "Refresh", "Content-Type"].indexOf(header.name) !== -1; }),
     cookies: response.cookies,
     content: response.content,
     redirectUrl: response.redirectUrl

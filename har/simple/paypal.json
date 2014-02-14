@@ -1157,6 +1157,10 @@
         {
           "name": "Content-Type",
           "value": "text/html"
+        },
+        {
+          "name": "Refresh",
+          "value": "0; url=https://staging.wifiservice.net/"
         }
       ],
       "cookies": [
