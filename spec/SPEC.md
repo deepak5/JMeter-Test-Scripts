@@ -368,7 +368,37 @@ HTTP (`https`):
 
 ## Payment process
 
+The "free X minutes" process works like this:
 
+* Browser makes request for a non-whitelist site, like `http://www.bbc.co.uk/`.
+* The request is intercepted by the gateway, which
+
+  * responds with an HTTP 302 response
+  * redirecting the client to the `/` resource on the captive portal HTTP service
+  * passing along some details in the `GET` string about the device and the site
+
+* The browser follows the redirect to the captive portal HTTP service, which
+  responds with a splash screen presenting payment options.
+* The user chooses the "free" option: they direct the browser to
+  `/product/free`, which responds with an HTML form to complete, including
+  details about the customer.
+* The user submits the form to `/product/free`. The response redirects the
+  user to `/`.
+* The browser requests `/` on the captive portal HTTP service, which
+
+  * redirects to `/login` on the gateway HTTP service
+  * passing along some details in the `GET` string:
+
+    * a `username` and `password`, which are are machine-generated (TODO)
+    * the `dst` URL set to the `/` resource on the captive portal, so it will
+      redirect back again
+
+* The browser requests `/login` on the gateway HTTP service with the
+  credentials provided by the captive portal. The gateway marks this user as
+  logged in, and redirects the user back to `dst`, which was set to `/` on the
+  captive portal.
+* The browser requests `/` on the captive portal, which serves an HTML page
+  welcoming the user and telling them how much time they have remaining.
 
 
 # TODO
