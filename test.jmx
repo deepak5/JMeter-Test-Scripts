@@ -1258,7 +1258,7 @@ vars.put(&quot;redirect_url&quot;,
               </collectionProp>
             </elementProp>
             <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1630,7 +1630,7 @@ vars.put(&quot;redirect_url&quot;,
               </collectionProp>
             </elementProp>
             <stringProp name="HTTPSampler.domain">${captive_portal_domain}</stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
