@@ -328,13 +328,19 @@ The "captive portal" concept uses HTTP for its authentication and payment
 processes. As an end-user, there are two key HTTP services you interact with.
 
 One HTTP service runs on the gateway. We will call this the *gateway HTTP
-service*. The gateway has state which records, per client, the:
+service*. The gateway has state which records, per user, the:
 
 * user name, e.g. `qeAgnWY0L4`
 * IP address, e.g. `192.168.103.148`
 * MAC address, e.g. `0A:1B:2C:3D:4E:0F`
-* session time: number of seconds used by the client in this session
-* time left: number of seconds remaining in this session before disconnection
+* Information about the user's session. If the user has a session in progress,
+  then it has a record of:
+
+  * Time the user's session started;
+  * Time the user's session is due to finish.
+
+  Otherwise, it has a record of how much time the user has remaining on the
+  session.
 
 The gateway HTTP service exposes the following resources over non-
 secure HTTP:
