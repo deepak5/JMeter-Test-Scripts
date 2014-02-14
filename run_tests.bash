@@ -10,6 +10,12 @@
 # generate MAC addresses
 # switch networks
 
+# Networks:
+#
+# NASID          Staging SSID
+# "GLAAIR01"     "!Staging_GLA"
+# "AIRLHRPUBT2"  "!Staging_LHR"
+
 ./run_test.bash $1 $2 0A:1B:2C:3D:4E:4D free
 ./run_test.bash $1 $2 0A:1B:2C:3D:4E:4D card
 ./run_test.bash $1 $2 0A:1B:2C:3D:4E:4D paypal
