@@ -1,4 +1,4 @@
-all: simple/free.json simple/free_invalid_customer_details_missing_email.json simple/card.json simple/paypal.json simple/redirect_when_not_logged_in.json simple/haven/free.json simple/heathrow/free.json
+all: simple/free.json simple/free_invalid_customer_details_missing_email.json simple/card.json simple/paypal.json simple/redirect_when_not_logged_in.json simple/haven/free.json simple/heathrow/free.json simple/heathrow/rewards.json
 
 simple/free.json: HAR/free.json
 	./transform.js HAR/free.json > simple/free.json
@@ -22,6 +22,10 @@ simple/paypal.json: HAR/paypal.json
 
 simple/redirect_when_not_logged_in.json: HAR/redirect_when_not_logged_in.json
 	./transform.js HAR/redirect_when_not_logged_in.json > simple/redirect_when_not_logged_in.json
+
+simple/heathrow/rewards.json: HAR/heathrow/rewards.json
+	mkdir -p simple/heathrow
+	./transform.js HAR/heathrow/rewards.json > simple/heathrow/rewards.json
 
 clean:
 	rm -rf simple/*
