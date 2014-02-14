@@ -2311,12 +2311,11 @@ vars.put(&quot;redirect_url&quot;,
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_expected_substring" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="637892783">wifiservice.net</stringProp>
+              <stringProp name="-1679912720">You are connected to the internet!</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">16</intProp>
-            <stringProp name="TestPlan.comments">TODO what does this actually contain</stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>

@@ -328,12 +328,27 @@ The "captive portal" concept uses HTTP for its authentication and payment
 processes. As an end-user, there are two key HTTP services you interact with.
 
 One HTTP service runs on the gateway. We will call this the *gateway HTTP
-service*. The gateway HTTP service exposes the following resources over non-
+service*. The gateway has state which records, per client, the:
+
+* user name, e.g. `qeAgnWY0L4`
+* IP address, e.g. `192.168.103.148`
+* MAC address, e.g. `0A:1B:2C:3D:4E:0F`
+* session time: number of seconds used by the client in this session
+* time left: number of seconds remaining in this session before disconnection
+
+The gateway HTTP service exposes the following resources over non-
 secure HTTP:
 
-* `/status`. This accepts `GET` requests and provides information on: TODO
-* `/login`. This accepts `POST` requests that include: TODO
-* `/logout`. This accepts `GET` requests (!)
+* `/status`. This accepts `GET` requests and provides information on the above
+  client-specific state. Under some conditions, it returns a 302 to the
+  captive portal HTTP service. (TODO)
+
+* `/login`. This accepts
+
+  * `GET` requests (!) with your `loginID` cookie. Logs you back in.
+  * `POST` requests that include: TODO
+
+* `/logout`.
 * ...
 
 Another HTTP service runs on the captive portal server. We will call this the
