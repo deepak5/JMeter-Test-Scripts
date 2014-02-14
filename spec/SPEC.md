@@ -299,3 +299,142 @@ longer have access?
 MAC address forgery!
 
 Client details (username/password)
+
+
+# Glossary
+
+NIC.
+  Network Interface Controller.
+  A network card in a PC etc.
+
+MAC address.
+  Media Access Control address.
+  Globally unique identifier for all NICs in the world ever.
+
+RAS
+  Remote Access Service.
+  Fuck knows; something to do with remote desktop.
+
+NAS.
+  Network Access Server.
+  A kind of Gateway.
+  Controls access by client machines to other services.
+
+  Identified by a NAS ID.
+
+Accounting.
+  The tracking of network resource consumption by users for the
+  purpose of capacity and trend analysis, cost allocation, billing.
+
+AAA
+  Authentication, Authorization, Accounting.
+
+RADIUS
+  Remote Access Dial In User Service.
+  A protocol providing AAA.
+  A client/server protocol.
+  An application-layer protocol.
+  Runs on UDP as transport layer.
+  The RADIUS server is usually a background process running on a UNIX or Microsoft Windows server.
+  Clients: RAS, NAS
+
+
+Network switch.
+  A physical device that connects many devices together on a computer network.
+  Data link layer.
+
+Gateway.
+  Like a switch but bigger???
+
+Walled garden.
+
+Captive portal.
+  A technique that forces an HTTP client on a network to see a
+  special web page for authentication purposes before using the
+  Internet normally. A captive portal turns a Web browser into an
+  authentication device.
+
+  This is done by intercepting all packets, regardless of address or port,
+  until the user opens a browser and tries to access the web.
+
+Winbox
+  Some software to manage MikroTik routers
+
+Hotspot
+  ???
+  Something to do with HP controllers
+  Something I can access using Winbox
+
+NOC
+  Network Operations Center.
+  Some humans in a room.
+
+NOC authentication.
+  Something to do with a NOC. ???
+
+
+Cisco CAR
+  Cisco Unified Communications Manager CDR Analysis and Reporting (CAR)
+  An AAA server ???
+  A RADIUS server???
+  Also does Accounting
+  "a tool that is used to create user, system, device, and billing reports."
+  Interfaces with:
+    ACS
+    MAMA
+
+NAC (1)
+  "Network Access Control"
+
+
+NAC (2)
+  "Network Admission Control"
+  Cisco's version of Network Access Control
+
+AP
+  "Access Point"
+
+Service Controller
+  The same as a NAS???
+
+Wireless Controller
+  A kind of Service Controller???
+
+MSC
+  A Service Controller???
+
+Colubris
+  Colubris Networks, a company acquired by HP
+
+HP MSM 3x3
+  A "Wireless Controller"
+
+ACS
+  "Access Control Server"
+  "a component of Cisco's Network Admission Control technology"
+  A DHCP server?
+  An HTTP server
+  Interfaces with:
+    Client/device
+    MAMA
+    CAR
+
+VSA
+  "Vendor-Specific Attributes"
+
+
+MAMA
+  Data backend to RADIUS server, including:
+    user accounts
+      username+password
+    accounting
+  "Hotspot" users?
+  Serves captive portal HTTP stuff.
+
+  It appears MAMA is two things:
+
+    The web server that hosts landing pages, using the service controller as
+    an authentication backend.
+
+    The RADIUS server's authentication backend. (Insanely, the RADIUS server
+    is *itself* the authentication backend of the service controller.)
