@@ -3084,36 +3084,22 @@ vars.put(&quot;redirect_url&quot;,
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_product_roaming_post_invalid" enabled="false">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_product_rewards_post_invalid" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="ay[roaming][id]" elementType="HTTPArgument">
+                <elementProp name="ay[heathrow_rewards][username]" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.value">6331570061787312</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">ay[roaming][id]</stringProp>
+                  <stringProp name="Argument.name">ay[heathrow_rewards][username]</stringProp>
                 </elementProp>
-                <elementProp name="ay[roaming][username]" elementType="HTTPArgument">
+                <elementProp name="ay[heathrow_rewards][password]" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">specuktestnotauser</stringProp>
+                  <stringProp name="Argument.value">3010</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">ay[roaming][username]</stringProp>
-                </elementProp>
-                <elementProp name="ay[roaming][password]" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">goboingo!</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">ay[roaming][password]</stringProp>
-                </elementProp>
-                <elementProp name="ay[terms_and_conditions]" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">1</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">ay[terms_and_conditions]</stringProp>
+                  <stringProp name="Argument.name">ay[heathrow_rewards][password]</stringProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -3123,7 +3109,7 @@ vars.put(&quot;redirect_url&quot;,
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/product/roaming</stringProp>
+            <stringProp name="HTTPSampler.path">/product/free-heathrow-rewards</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3151,16 +3137,16 @@ vars.put(&quot;redirect_url&quot;,
               <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
+              <stringProp name="TestPlan.comments">TODO Where is the location header?</stringProp>
             </ResponseAssertion>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_location" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_error_message" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1916825961">https://${captive_portal_domain}/?mikrotik%5Berror%5D=RADIUS+server+is+not+responding</stringProp>
+                <stringProp name="724347706">Terms And Conditions cannot be left empty</stringProp>
               </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.sample_label</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
-              <stringProp name="TestPlan.comments">TODO is this really what should happen? Doesn&apos;t sound like the right error response for a non-existent user. Also, the captive portal HTTP service does not seem to pick up on the mikrotik[error] field and inform the user.</stringProp>
+              <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
