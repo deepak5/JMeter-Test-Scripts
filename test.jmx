@@ -79,7 +79,11 @@ vars.put(&quot;site_non_whitelist_example_expected_substring&quot;, props.get(&q
 vars.put(&quot;site_blacklist_type&quot;, props.get(&quot;site.blacklist.type&quot;));
 
 vars.put(&quot;site_payment_method_free_mins&quot;, props.get(&quot;site.payment_method.free.mins&quot;));
-vars.put(&quot;site_payment_method_roaming_redirection_url&quot;, props.get(&quot;site.payment_method.roaming.redirect_url&quot;));
+
+vars.put(&quot;site_payment_method_roaming_redirect_protocol&quot;, props.get(&quot;site.payment_method.roaming.redirect.protocol&quot;));
+vars.put(&quot;site_payment_method_roaming_redirect_domain&quot;, props.get(&quot;site.payment_method.roaming.redirect.domain&quot;));
+vars.put(&quot;site_payment_method_roaming_redirect_path&quot;, props.get(&quot;site.payment_method.roaming.redirect.path&quot;));
+vars.put(&quot;site_payment_method_roaming_redirect_expected_substring&quot;, props.get(&quot;site.payment_method.roaming.redirect.expected_substring&quot;));
 
 // The MAC address of the machine the tests are running from. Use uppercase!
 vars.put(&quot;mac_address&quot;, props.get(&quot;mac_address&quot;));
@@ -105,6 +109,15 @@ vars.put(&quot;payment_method&quot;, props.get(&quot;payment_method&quot;));
 
 
 //// Computed vars ////
+
+vars.put(&quot;site_payment_method_roaming_redirect_url&quot;,
+  vars.get(&quot;site_payment_method_roaming_redirect_protocol&quot;) + &quot;://&quot; +
+  vars.get(&quot;site_payment_method_roaming_redirect_domain&quot;) +
+  vars.get(&quot;site_payment_method_roaming_redirect_path&quot;));
+
+// Jesus H Christ, JMeter is shite
+vars.put(&quot;site_payment_method_roaming_redirect_port&quot;,
+  vars.get(&quot;site_payment_method_roaming_redirect_protocol&quot;) == &quot;http&quot; ? &quot;80&quot; : &quot;443&quot;);
 
 vars.put(&quot;device_id&quot;, vars.get(&quot;mac_address&quot;).replace(&quot;:&quot;, &quot;&quot;));
 
@@ -2768,6 +2781,15 @@ vars.put(&quot;redirect_url&quot;,
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_header_refresh" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1791818011">Refresh: 0; url=${site_payment_method_roaming_redirect_url}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_logoff_url" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="410252722">&lt;LogoffURL&gt;http://${site_domain}/logout&lt;/LogoffURL&gt;</stringProp>
@@ -2779,7 +2801,40 @@ vars.put(&quot;redirect_url&quot;,
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_redirection_url" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-992040802">&lt;RedirectionURL&gt;${site_payment_method_roaming_redirection_url}&lt;/RedirectionURL&gt;</stringProp>
+                <stringProp name="-1997606400">&lt;RedirectionURL&gt;${site_payment_method_roaming_redirect_url}&lt;/RedirectionURL&gt;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_roaming_redirection_url" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${site_payment_method_roaming_redirect_domain}</stringProp>
+            <stringProp name="HTTPSampler.port">${site_payment_method_roaming_redirect_port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">${site_payment_method_roaming_redirect_protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">${site_payment_method_roaming_redirect_path}</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient3.1</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="TestPlan.comments">FIXME or rather FIXJMETER</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_expected_substring" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1538515066">${site_payment_method_roaming_redirect_expected_substring}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
