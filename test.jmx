@@ -79,6 +79,7 @@ vars.put(&quot;site_non_whitelist_example_expected_substring&quot;, props.get(&q
 vars.put(&quot;site_blacklist_type&quot;, props.get(&quot;site.blacklist.type&quot;));
 
 vars.put(&quot;site_payment_method_free_mins&quot;, props.get(&quot;site.payment_method.free.mins&quot;));
+vars.put(&quot;site_payment_method_roaming_redirection_url&quot;, props.get(&quot;site.payment_method.roaming.redirect_url&quot;));
 
 // The MAC address of the machine the tests are running from. Use uppercase!
 vars.put(&quot;mac_address&quot;, props.get(&quot;mac_address&quot;));
@@ -2396,15 +2397,6 @@ vars.put(&quot;redirect_url&quot;,
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_expected_substring" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1339926425">Review your information</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
-            </ResponseAssertion>
-            <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_message" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2524">OK</stringProp>
@@ -2412,6 +2404,15 @@ vars.put(&quot;redirect_url&quot;,
               <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_expected_substring" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1339926425">Review your information</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
@@ -2614,13 +2615,13 @@ vars.put(&quot;redirect_url&quot;,
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_message" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_redirection_url" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="2524">OK</stringProp>
+                <stringProp name="232356173">&lt;RedirectionURL&gt;https://${captive_portal_domain}/&lt;/RedirectionURL&gt;</stringProp>
               </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
+              <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_logoff_url" enabled="true">
@@ -2632,13 +2633,13 @@ vars.put(&quot;redirect_url&quot;,
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_redirection_url" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_message" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="232356173">&lt;RedirectionURL&gt;https://${captive_portal_domain}/&lt;/RedirectionURL&gt;</stringProp>
+                <stringProp name="2524">OK</stringProp>
               </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
+              <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
@@ -2660,7 +2661,7 @@ vars.put(&quot;redirect_url&quot;,
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/product/roaming</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
@@ -2670,15 +2671,31 @@ vars.put(&quot;redirect_url&quot;,
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check response" enabled="false">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_code" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1052441473">Roaming Partner</stringProp>
-                <stringProp name="981542381">GET ONLINE
-  </stringProp>
+                <stringProp name="49586">200</stringProp>
               </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_message" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="2524">OK</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_expected_substring" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-276287668">Select your roaming provider and enter your username and password below to login.</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
@@ -2732,7 +2749,44 @@ vars.put(&quot;redirect_url&quot;,
             <boolProp name="HTTPSampler.monitor">false</boolProp>
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           </HTTPSamplerProxy>
-          <hashTree/>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_code" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_message" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="2524">OK</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_logoff_url" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="410252722">&lt;LogoffURL&gt;http://${site_domain}/logout&lt;/LogoffURL&gt;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="response_body_has_redirection_url" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-992040802">&lt;RedirectionURL&gt;${site_payment_method_roaming_redirection_url}&lt;/RedirectionURL&gt;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data_as_document</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="request_non_whitelist_url_succeeds_after_login" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
